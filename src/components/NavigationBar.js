@@ -25,7 +25,7 @@ function NavigationBar() {
                             About Us
                         </Link>
                         <Nav.Link className="call-button" href="tel:07842602888">
-                            Call Now >
+                            Call Now &#62;
                         </Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
