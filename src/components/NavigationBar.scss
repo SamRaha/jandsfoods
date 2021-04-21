@@ -1,0 +1,35 @@
+.Navbar {
+    background-color: white;
+    border: 1px solid red;
+    height: 150px;
+}
+.nav-link {
+    color: black !important;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.call-button {
+    // padding: 10px 20px !important;
+    color: white !important;
+    background-color: #277d2a;
+    font-weight: 400;
+    text-align: center;
+    border-radius: 10px;
+    width: 150px;
+    margin-left: 10px;
+}
+
+.navbar-collapse {
+    // height: 251px !important;
+}
+
+@media only screen and (max-width: 991px) {
+    .Navbar {
+        height: auto !important;
+    }
+    .call-button {
+        margin: auto;
+    }
+}
