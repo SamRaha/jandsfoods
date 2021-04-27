@@ -1,6 +1,6 @@
+@import "../variables.scss";
 .Navbar {
     background-color: white;
-    border: 1px solid red;
     height: 150px;
     padding: 0 70px;
     max-width: 1800px;
@@ -20,7 +20,7 @@
 .call-button {
     // padding: 10px 20px !important;
     color: white !important;
-    background-color: #277d2a;
+    background-color: $green;
     font-weight: 400;
     text-align: center;
     border-radius: 10px;

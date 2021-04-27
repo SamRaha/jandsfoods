@@ -1,25 +1,5 @@
+@import "../variables.scss";
 .home-container {
     max-width: 1800px;
-    border: 1px solid blue;
     margin: auto;
-}
-
-.hero {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-image: url("../assets/Hero-Background.png");
-    min-height: calc(100vh - 150px);
-    height: 100%;
-}
-
-.what-we-do {
-    height: 827px;
-    width: 100%;
-}
-
-@media only screen and (max-width: 991px) {
-    .hero {
-        min-height: calc(100vh - 71.63px);
-    }
 }
