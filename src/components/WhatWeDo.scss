@@ -3,13 +3,11 @@
 .what-we-do-container {
     @include flexCenter(column);
     height: 827px;
-    border: 1px solid red;
     width: 100%;
     .what-we-do-title {
         @include flexCenter(row);
         position: relative;
         .left-leaves {
-            // padding-bottom: 20px;
             position: absolute;
             left: 230px;
             top: -120px;
@@ -29,18 +27,37 @@
     }
     .blocks {
         max-width: 1076px;
-        border: 1px solid blue;
         height: 100%;
         @include flexCenter(row);
+        // flex-wrap: wrap;
         .block {
             width: 278px;
             margin: 0 50px;
-            text-align: left;
+            text-align: center;
+
+            p {
+                text-align: justify;
+            }
         }
     }
     @media only screen and (max-width: 1076px) {
         .blocks {
             display: block;
         }
+
+        .left-leaves {
+            display: none;
+        }
+        .right-leaves {
+            display: none;
+        }
+        .block {
+            text-align: justify;
+        }
+    }
+}
+@media only screen and (max-width: 1076px) {
+    .what-we-do-container {
+        justify-content: flex-start !important;
     }
 }
