@@ -24,7 +24,7 @@ function NavigationBar() {
                         <Link className="nav-link" to="/about">
                             About Us
                         </Link>
-                        <Nav.Link className="call-button" href="tel:07842602888">
+                        <Nav.Link className="call-button" href="tel:01132788266">
                             Call Now &#62;
                         </Nav.Link>
                     </Nav>
