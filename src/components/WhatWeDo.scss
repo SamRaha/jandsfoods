@@ -29,6 +29,7 @@
         max-width: 1076px;
         height: 100%;
         @include flexCenter(row);
+        align-items: flex-start;
         // flex-wrap: wrap;
         .block {
             width: 278px;
@@ -43,6 +44,7 @@
     @media only screen and (max-width: 1076px) {
         .blocks {
             display: block;
+            flex: 1;
         }
 
         .left-leaves {
@@ -67,5 +69,6 @@
     .what-we-do-container {
         justify-content: flex-start !important;
         margin-top: 40px;
+        height: 100%;
     }
 }
