@@ -50,7 +50,7 @@ function Products() {
                         <div className="products-image-block vegan"></div>
                     </div>
                     <div className="products-block">
-                        <div className="products-image-block"></div>
+                        <div className="products-image-block festival"></div>
                         <div className="products-text-block">
                             <h3>Festival/Street Food</h3>
                             <p>
@@ -59,14 +59,6 @@ function Products() {
                             </p>
                             <a href="">View Menu</a>
                         </div>
-                    </div>
-                    <div className="products-block">
-                        <div className="products-text-block">
-                            <h3></h3>
-                            <p></p>
-                            <a href="">View Menu</a>
-                        </div>
-                        <div className="products-image-block"></div>
                     </div>
                 </div>
             </div>
