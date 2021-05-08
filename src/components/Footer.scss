@@ -2,13 +2,11 @@
 
 .footer-container {
     height: 390px;
-    border: 1px solid black;
     background-color: $darkgreen;
     color: white;
     text-align: left;
     @include flexCenter(column);
-    align-items: flex-start;
-    // padding: 0 70px;
+
     & p {
         font-family: "Roboto", sans-serif;
         font-weight: 300;

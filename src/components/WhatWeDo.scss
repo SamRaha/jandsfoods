@@ -10,21 +10,28 @@
         .left-leaves {
             position: absolute;
             left: 230px;
-            top: -120px;
+            top: -60px;
         }
         .right-leaves {
             position: absolute;
             right: 230px;
-            top: -120px;
+            top: -60px;
         }
     }
-    h1 {
+    & h1 {
         margin-bottom: 60px;
         margin-top: 60px;
+        font-size: 42px;
+        font-weight: 400;
     }
-    h4 {
+    & h4 {
         margin-bottom: 30px;
+        font-size: 28px;
+        font-weight: 400;
+        max-width: 180px;
+        margin: auto;
     }
+
     .blocks {
         max-width: 1076px;
         height: 100%;
@@ -33,11 +40,14 @@
         // flex-wrap: wrap;
         .block {
             width: 278px;
-            margin: 0 50px;
+            margin: 0 30px;
             text-align: center;
 
             p {
                 text-align: justify;
+                @include roboto(19px);
+                font-weight: 300;
+                margin-top: 30px;
             }
         }
     }
