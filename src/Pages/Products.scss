@@ -1,0 +1,73 @@
+@import "../variables.scss";
+.products-container {
+    max-width: 1800px;
+    // width: 100%;
+    margin: auto;
+    @include flexCenter(column);
+
+    .products-header {
+        max-width: 459px;
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+    & h1 {
+        font-size: 42;
+    }
+    & p {
+        text-align: justify;
+        @include roboto(20px);
+        margin: 0;
+    }
+    .products-block-container {
+        padding: 0 146px;
+        width: 100%;
+        @include flexCenter(column);
+        margin: auto;
+        .products-block {
+            @include flexCenter(row);
+            max-width: 1148px;
+            height: 372px;
+            margin: 25px 0;
+            .restaurants {
+                background-image: url("../assets/restaurants.png");
+            }
+            .schools {
+                background-image: url("../assets/schools.png");
+            }
+            .cafes {
+                background-image: url("../assets/cafes.png");
+            }
+            .vegan {
+                background-image: url("../assets/vegan.png");
+            }
+
+            .products-image-block {
+                background-repeat: no-repeat;
+                background-size: auto;
+                width: 574px;
+
+                height: 100%;
+            }
+            .products-text-block {
+                width: 574px;
+                height: 100%;
+                background-color: #f6f6f8;
+                & h3 {
+                }
+                & p {
+                }
+                & a {
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1076px) {
+    .products-container {
+        padding: 0 20px;
+        .products-header {
+            margin-top: 30px !important;
+        }
+    }
+}

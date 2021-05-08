@@ -6,5 +6,9 @@ $darkgreen: #164f39;
     align-items: center;
     flex-direction: $direction;
 }
+@mixin roboto($fontsize) {
+    font-family: "Roboto", sans-serif;
+    font-size: $fontsize;
+}
 
 // @include flexCenter(column);

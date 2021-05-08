@@ -26,10 +26,10 @@
         @include flexCenter(row);
         position: relative;
     }
-    h1 {
+    & h1 {
         margin-bottom: 60px;
     }
-    h4 {
+    & h4 {
         margin-bottom: 15px;
         text-align: left;
         font-size: 28px;
@@ -48,7 +48,7 @@
             margin: 0 50px;
             text-align: left;
 
-            p {
+            & p {
                 text-align: justify;
                 font-size: 20px;
                 font-weight: 300 !important;
@@ -76,7 +76,7 @@
         height: 100% !important;
         padding-bottom: 150px;
     }
-    p {
+    & p {
         text-align: left !important;
         font-size: 17px !important;
     }
