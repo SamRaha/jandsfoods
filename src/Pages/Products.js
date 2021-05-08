@@ -49,7 +49,7 @@ function Products() {
                         </div>
                         <div className="products-image-block vegan"></div>
                     </div>
-                    <div className="products-block">
+                    <div className="products-block last">
                         <div className="products-image-block festival"></div>
                         <div className="products-text-block">
                             <h3>Festival/Street Food</h3>

@@ -24,7 +24,9 @@
         width: 100%;
         @include flexCenter(column);
         margin: auto;
-
+        .last {
+            margin-bottom: 100px !important;
+        }
         .products-block {
             @include flexCenter(row);
             max-width: 1148px;

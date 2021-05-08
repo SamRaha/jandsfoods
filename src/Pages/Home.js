@@ -8,13 +8,15 @@ import "./Home.scss";
 
 function Home() {
     return (
-        <div className="home-container">
-            <Hero />
-            <WhatWeDo />
-            <CustomerReviews />
-            <TwitterFeed />
+        <>
+            <div className="home-container">
+                <Hero />
+                <WhatWeDo />
+                <CustomerReviews />
+                <TwitterFeed />
+            </div>
             <Footer />
-        </div>
+        </>
     );
 }
 
