@@ -10,6 +10,7 @@ function Home() {
     return (
         <>
             <div className="home-container">
+                <div className="clear"></div>
                 <Hero />
                 <WhatWeDo />
                 <CustomerReviews />

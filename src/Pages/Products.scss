@@ -1,12 +1,13 @@
 @import "../variables.scss";
+
 .products-container {
     max-width: 1800px;
     margin: auto;
     @include flexCenter(column);
 
     .products-header {
-        max-width: 459px;
-        margin-top: 100px;
+        max-width: 600px;
+        margin-top: 70px;
         margin-bottom: 50px;
         & h1 {
             font-size: 42;
@@ -89,20 +90,21 @@
 @media only screen and (max-width: 1076px) {
     .products-container {
         width: 100%;
-        border: 1px solid red;
+        padding: 0 20px;
         .products-header {
             margin-top: 30px !important;
+            padding: 0 20px;
         }
     }
     .products-block-container {
         padding: 0 !important;
         width: 100% !important;
-        border: 1px solid blue;
+
         max-width: 600px;
     }
     .products-block {
         flex-direction: column !important;
-        border: 1px solid green;
+
         height: 600px !important;
         width: 100% !important;
         padding: 0;
@@ -120,8 +122,9 @@
             width: 100% !important;
             padding: 0 20px !important;
             h3,
-            p a {
-                margin: 0 !important;
+            p,
+            a {
+                margin: 5px 0 !important;
                 padding: 0 !important;
             }
         }

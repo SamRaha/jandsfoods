@@ -6,6 +6,7 @@ function Products() {
     return (
         <>
             <div className="products-container">
+                <div className="clear"></div>
                 <div className="products-header">
                     <h1>Our Products</h1>
                     <p>Our adaptable service means we can source almost any product you’re looking for, so even if you don’t see what you need on our list of products, just give us a call or email us and we will be able to help. </p>

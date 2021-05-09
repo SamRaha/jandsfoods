@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 function NavigationBar() {
     return (
         <div id="Navbar">
-            <Navbar className="Navbar" collapseOnSelect expand="lg" variant="light">
+            <Navbar className="Navbar fixed-top" collapseOnSelect expand="lg" variant="light">
                 <Navbar.Brand href="/">
                     <img alt="" src={Logo} width="200px" height="100%" className="Navbar-brand d-inline-block align-center nav-logo" />
                 </Navbar.Brand>
