@@ -4,6 +4,7 @@ import "./NavigationBar.scss";
 import Logo from "../assets/logo2.jpg";
 import LogoMobile from "../assets/logo3.png";
 import { Link } from "react-router-dom";
+import Arrow from "../assets/arrow-vector.svg";
 
 function NavigationBar() {
     return (
@@ -27,7 +28,7 @@ function NavigationBar() {
                             About Us
                         </Link>
                         <Nav.Link className="call-button" href="tel:01132788266">
-                            Call Now &#62;
+                            Call Now <img src={Arrow} alt="" />
                         </Nav.Link>
                     </Nav>
                 </Navbar.Collapse>

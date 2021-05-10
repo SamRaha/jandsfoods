@@ -22,33 +22,48 @@
         text-align: left;
         font-family: "Roboto", sans-serif;
     }
-    button {
+    .products-button {
         margin-top: 50px;
-        padding: 5px 20px;
+        padding: 8px 25px;
         background-color: $green;
         color: white !important;
         border-radius: 15px;
         font-size: 20px;
         border: none;
         font-family: "Roboto", sans-serif;
+        font-weight: 400;
+
+        img {
+            padding-left: 10px;
+        }
     }
-    & img {
+
+    .fairtrade {
+        width: 223px;
         margin-top: 50px;
     }
 }
 
 @media only screen and (max-width: 991px) {
     .hero {
-        height: calc(100vh - 69.5px);
+        height: calc(100vh - 75.5px);
         align-items: center;
         justify-content: flex-start;
         padding: 20px !important;
         align-items: center;
-    }
-    h1 {
-        text-align: left;
-        margin-top: 44px;
-        font-size: 35px;
+        h1 {
+            text-align: left;
+            margin-top: 25px !important;
+            font-size: 35px !important;
+            margin-bottom: 25px !important;
+        }
+        .fairtrade {
+            width: 170px !important;
+            margin-top: 25px !important;
+        }
+        .products-button {
+            margin-top: 25px !important;
+        }
     }
 }
 
