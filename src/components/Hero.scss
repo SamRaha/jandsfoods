@@ -3,7 +3,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-image: url("../assets/Hero-Background.png");
+    background-image: url("../assets/hero-image.png");
     min-height: calc(100vh - 150px);
     height: 100%;
     @include flexCenter(column);
@@ -39,16 +39,20 @@
 
 @media only screen and (max-width: 991px) {
     .hero {
-        min-height: calc(100vh - 71.63px);
+        min-height: calc(100vh - 69.63px);
+        align-items: center;
+        justify-content: flex-start;
     }
     h1 {
         text-align: left;
+        margin-top: 44px;
+        font-size: 35px;
     }
 }
 
 @media only screen and (max-width: 1076px) {
     .hero {
-        background-image: url("../assets/hero-mobile-background.png");
+        background-image: url("../assets/hero-background2.png");
         padding-left: 20px;
     }
 }

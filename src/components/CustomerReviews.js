@@ -20,7 +20,7 @@ function CustomerReviews() {
                     <p className="reference">John Richold, Food Development Manager</p>
                 </div>
                 <div className="block">
-                    <h4>Red Kite Learning Trust</h4>
+                    <h4>Red Kite Learning Trust:</h4>
                     <img className="stars" src={Stars} alt="stars" />
                     <p>
                         J and S Foods continue to be a key strategic long term food wholesale supplier to the Red Kite Learning Trust. Our close working partnership continues to deliver an extensive range of products and services which adds
