@@ -60,14 +60,14 @@
         .left-leaves {
             // display: block;
             // position: relative !important;
-            top: 0 !important;
-            left: 0 !important;
+            top: -65px !important;
+            left: -10px !important;
             width: 120px;
         }
         .right-leaves {
             // display: none;
-            top: 0 !important;
-            right: 0 !important;
+            top: -65px !important;
+            right: -10px !important;
             width: 120px;
         }
         .block {
@@ -78,7 +78,7 @@
 @media only screen and (max-width: 1076px) {
     .what-we-do-container {
         justify-content: flex-start !important;
-        margin-top: 40px;
+        padding-top: 80px;
         height: 100%;
     }
 }

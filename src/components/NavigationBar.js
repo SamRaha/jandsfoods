@@ -1,7 +1,8 @@
 import React from "react";
 import { Nav, Navbar } from "react-bootstrap";
 import "./NavigationBar.scss";
-import Logo from "../assets/logo.png";
+import Logo from "../assets/logo2.jpg";
+import LogoMobile from "../assets/logo3.png";
 import { Link } from "react-router-dom";
 
 function NavigationBar() {
@@ -9,7 +10,8 @@ function NavigationBar() {
         <div id="Navbar">
             <Navbar className="Navbar fixed-top" collapseOnSelect expand="lg" variant="light">
                 <Navbar.Brand href="/">
-                    <img alt="" src={Logo} width="200px" height="100%" className="Navbar-brand d-inline-block align-center nav-logo" />
+                    <img alt="" src={Logo} width="200px" height="100%" className="Navbar-brand d-inline-block align-center nav-logo desktop-logo" />
+                    <img alt="" src={LogoMobile} width="200px" height="100%" className="Navbar-brand d-inline-block align-center nav-logo mobile-logo" />
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">

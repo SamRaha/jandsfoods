@@ -39,9 +39,11 @@
 
 @media only screen and (max-width: 991px) {
     .hero {
-        min-height: calc(100vh - 69.63px);
+        height: calc(100vh - 69.5px);
         align-items: center;
         justify-content: flex-start;
+        padding: 20px !important;
+        align-items: center;
     }
     h1 {
         text-align: left;

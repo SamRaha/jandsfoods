@@ -16,6 +16,12 @@
     height: 100%;
     width: 250px;
 }
+.nav-logo {
+    width: 140px;
+}
+.mobile-logo {
+    display: none !important;
+}
 
 .call-button {
     // padding: 10px 20px !important;
@@ -43,5 +49,14 @@
     .Navbar-brand {
         height: 100%;
         width: 200px;
+    }
+    .nav-logo {
+        width: 65px;
+    }
+    .mobile-logo {
+        display: block !important;
+    }
+    .desktop-logo {
+        display: none !important;
     }
 }
