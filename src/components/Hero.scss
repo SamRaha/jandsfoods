@@ -73,3 +73,9 @@
         padding-left: 20px;
     }
 }
+
+@media only screen and (min-width: 1800px) {
+    .hero {
+        box-shadow: 0 0 4px 4px white inset;
+    }
+}

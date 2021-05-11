@@ -7,8 +7,19 @@
 
     .products-header {
         max-width: 600px;
-        margin-top: 70px;
+        margin-top: 150px;
         margin-bottom: 50px;
+        position: relative;
+        .left-leaves {
+            position: absolute;
+            left: 10px;
+            top: -120px;
+        }
+        .right-leaves {
+            position: absolute;
+            right: 10px;
+            top: -120px;
+        }
         & h1 {
             font-size: 42;
         }
