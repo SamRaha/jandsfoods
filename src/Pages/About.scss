@@ -4,6 +4,7 @@
     max-width: 1800px;
     margin: auto;
     @include flexCenter(column);
+    padding: 0 70px;
 
     .about-header {
         width: 100%;
@@ -14,12 +15,12 @@
         flex-wrap: wrap;
         align-items: flex-start;
         .about-us {
-            max-width: 700px;
+            flex: 3;
             padding-right: 100px;
             text-align: justify;
         }
         .stars {
-            max-width: 500px;
+            flex: 2;
             text-align: left;
             position: relative;
             & :nth-child(1) {
@@ -33,10 +34,12 @@
             & h2 {
                 font-weight: 400;
                 margin-top: 30px;
+                font-size: 28px;
             }
         }
         & h1 {
-            font-size: 42;
+            font-size: 42px;
+            margin-bottom: 15px;
         }
         & p {
             text-align: justify;
@@ -126,6 +129,7 @@
         .about-header {
             margin-top: 30px !important;
             padding: 0 20px;
+            flex-direction: column;
             .about-us {
                 padding: 0;
             }
