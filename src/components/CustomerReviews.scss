@@ -2,7 +2,7 @@
 .customer-reviews-container {
     background-color: #f6f6f8;
     @include flexCenter(column);
-    height: 988px;
+    height: 1088px;
     width: 100%;
     justify-content: flex-start;
     padding-top: 88px;
@@ -43,9 +43,10 @@
         align-items: flex-start;
 
         .block {
+            min-width: 278px;
             max-width: 500px;
             flex: 1;
-            margin: 0 50px;
+            margin: 0 30px;
             text-align: left;
 
             & p {

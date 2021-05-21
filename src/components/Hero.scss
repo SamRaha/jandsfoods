@@ -5,6 +5,7 @@
     background-size: cover;
     background-image: url("../assets/hero-image.png");
     min-height: calc(100vh - 150px);
+    // min-height: calc(100vh - 150px);
     height: 100%;
     @include flexCenter(column);
     align-items: flex-start;

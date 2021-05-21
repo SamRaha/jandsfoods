@@ -29,6 +29,15 @@ function CustomerReviews() {
                     </p>
                     <p className="reference">David Carrack, Executive Chef</p>
                 </div>
+                <div className="block">
+                    <h4>Tribeca Cafe</h4>
+                    <img className="stars" src={Stars} alt="stars" />
+                    <p>
+                        J and S have been one of our talented suppliers for almost a decade. We've always been given the best of service from John and his friendly team. Their vast choice of products, coupled with their 'nothing is ever too much
+                        trouble' approach has ensured we in turn can create amazing food for our lovely clients. Highly recommended.
+                    </p>
+                    <p className="reference">Sarah, Owner</p>
+                </div>
             </div>
             <img className="carrots" src={Carrots} alt="carrots" />
             <img className="avacado" src={Avacado} alt="avacado" />
