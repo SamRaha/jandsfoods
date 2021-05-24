@@ -1,5 +1,6 @@
 import React from "react";
 import $ from "jquery";
+import "./Contact.scss";
 
 function Contact() {
     function submitContactForm(e) {
@@ -66,7 +67,7 @@ function Contact() {
             });
     }
     return (
-        <div className="contact-form container-fluid">
+        <div className="contact-form contact-section container-fluid">
             <form id="contact-form" className="contact-form-background" method="post">
                 <div id="contact-form-confirmation" className="contact-form-confirmation">
                     <p>
@@ -107,7 +108,7 @@ function Contact() {
                         onClick={(event) => {
                             submitContactForm(event);
                         }}
-                        className="btn btn-primary submit-button"
+                        className="btn submit-button"
                     >
                         Submit
                     </button>
