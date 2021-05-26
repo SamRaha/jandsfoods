@@ -1,8 +1,15 @@
 import React from "react";
 import $ from "jquery";
 import "./Contact.scss";
-
+import ReCAPTCHA from "react-google-recaptcha";
+import dotenv from "dotenv";
+dotenv.config();
 function Contact() {
+    const [reCaptchaCompleted, setreCaptchaCompleted] = React.useState(false);
+    function onChange(value) {
+        console.log("Captcha value:", value);
+        setreCaptchaCompleted(true);
+    }
     function submitContactForm(e) {
         e.preventDefault();
         var Namere = /[A-Za-z]{1}[A-Za-z]/;
@@ -50,21 +57,25 @@ function Contact() {
             body: raw,
             redirect: "follow",
         };
+        if (reCaptchaCompleted) {
+            console.log("recaptcha completed");
+            fetch("https://tmo7dk53bd.execute-api.eu-west-1.amazonaws.com/dev/", requestOptions)
+                .then((response) => response.text())
+                .then((result) => console.log(result))
+                .then(() => {
+                    // alert("Successfull");
+                    document.getElementById("contact-form").reset();
+                    $contactFormContent.addClass("display-none");
+                    $contactFormConfirmation.addClass("display-block");
 
-        fetch("https://tmo7dk53bd.execute-api.eu-west-1.amazonaws.com/dev/", requestOptions)
-            .then((response) => response.text())
-            .then((result) => console.log(result))
-            .then(() => {
-                // alert("Successfull");
-                document.getElementById("contact-form").reset();
-                $contactFormContent.addClass("display-none");
-                $contactFormConfirmation.addClass("display-block");
-
-                // location.reload();
-            })
-            .catch((error) => {
-                console.log("error", error) && alert("unsuccesful");
-            });
+                    // location.reload();
+                })
+                .catch((error) => {
+                    console.log("error", error) && alert("unsuccesful");
+                });
+        } else {
+            console.log("recaptcha not completed");
+        }
     }
     return (
         <div className="contact-form contact-section container-fluid">
@@ -112,6 +123,7 @@ function Contact() {
                     >
                         Submit
                     </button>
+                    <ReCAPTCHA sitekey={process.env.REACT_APP_RECAPTCHA_SITE_KEY} onChange={onChange} />,
                 </div>
             </form>
         </div>
