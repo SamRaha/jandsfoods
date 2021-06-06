@@ -16,7 +16,7 @@ var client = new Twitter({
 var params = { screen_name: "@jandsfoodsleeds" };
 client.get("statuses/user_timeline", params, function (error, tweets, response) {
     if (!error) {
-        console.log(tweets[1].text);
+        console.log(tweets[4]);
         Object.values(tweets).forEach((key, i) => {
             // console.log(key.text);
             // display.push(<Bar key={i} dataKey={key} stackId={alphabet[i]} fill={colours[i]} label={{ position: "top" }} />);
