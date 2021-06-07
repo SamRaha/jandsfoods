@@ -99,6 +99,9 @@
 }
 
 @media only screen and (max-width: 1076px) {
+    h1 {
+        font-size: 35px !important;
+    }
     .products-container {
         width: 100%;
         padding: 0 20px;
@@ -110,13 +113,13 @@
     .left-leaves {
         // display: block;
         // position: relative !important;
-        top: -65px !important;
+        top: -70px !important;
         left: 10px !important;
         width: 120px;
     }
     .right-leaves {
         // display: none;
-        top: -65px !important;
+        top: -70px !important;
         right: 10px !important;
         width: 120px;
     }
@@ -148,7 +151,7 @@
             h3,
             p,
             a {
-                margin: 5px 0 !important;
+                margin: 10px 0 !important;
                 padding: 0 !important;
             }
         }

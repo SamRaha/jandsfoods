@@ -1,6 +1,7 @@
 import React from "react";
 import Footer from "../components/Footer";
 import "./About.scss";
+import FamilyVector from "../assets/FamilyVector.svg";
 
 function About() {
     return (
@@ -21,14 +22,18 @@ function About() {
                             you and your business.
                         </p>
                     </div>
-
-                    <div className="stars">
-                        <h2>5 star hygiene rating </h2>
-                        <h2>40+ years experience</h2>
-                        <h2>STS Accredited</h2>
-                        <h2>Erudus Food Safety Compliant</h2>
-                        <h2>Diverse product range</h2>
-                        <h2>Full technical specifications, allergen information and nutritional data for all our products</h2>
+                    <div className="stars-container">
+                        <div className="stars">
+                            <div className="star-content">
+                                <h2>5 star hygiene rating </h2>
+                                <h2>40+ years experience</h2>
+                                <h2>STS Accredited</h2>
+                                <h2>Erudus Food Safety Compliant</h2>
+                                <h2>Diverse product range</h2>
+                                <h2>Full technical specifications, allergen information and nutritional data for all our products</h2>
+                            </div>
+                        </div>
+                        <img className="family-vector" src={FamilyVector} alt="" />
                     </div>
                 </div>
                 <div className="about-block-container">

@@ -11,31 +11,50 @@
         margin-top: 100px;
         margin-bottom: 50px;
         position: relative;
-        @include flexCenter(row);
+        @include flexCenter(column);
         flex-wrap: wrap;
         align-items: flex-start;
+        max-width: 1148px;
+
         .about-us {
-            flex: 3;
             padding-right: 100px;
             text-align: justify;
+            max-width: 1000px !important;
+            margin: auto;
+            margin-bottom: 50px;
+        }
+        .stars-container {
+            @include flexCenter(row);
+            justify-content: space-around !important;
+            margin: auto;
+        }
+        .family-vector {
+            flex: 1;
+            max-width: 574px;
         }
         .stars {
-            flex: 2;
+            flex: 1;
             text-align: left;
             position: relative;
             margin-top: 12px;
+            max-width: 574px;
+
+            .star-content {
+                max-width: 500px;
+            }
             & :nth-child(1) {
                 margin-top: 52px;
             }
             & ::before {
                 content: url("../assets/Star.svg");
                 position: absolute;
-                left: -35px;
+                left: -20px;
             }
             & h2 {
                 font-weight: 400;
                 margin-top: 30px;
                 font-size: 28px;
+                padding-left: 15px;
             }
         }
         & h1 {
@@ -124,6 +143,12 @@
 }
 
 @media only screen and (max-width: 1076px) {
+    .family-vector {
+        display: none !important;
+    }
+    h1 {
+        font-size: 35px !important;
+    }
     .about-container {
         width: 100%;
         padding: 0 20px;
