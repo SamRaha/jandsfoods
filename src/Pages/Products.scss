@@ -7,7 +7,7 @@
 
     .products-header {
         max-width: 600px;
-        margin-top: 80px;
+        margin-top: 140px;
         margin-bottom: 50px;
         position: relative;
         .left-leaves {
@@ -21,7 +21,7 @@
             top: -120px;
         }
         & h1 {
-            font-size: 42;
+            font-size: 42px;
         }
         & p {
             text-align: justify;
@@ -103,9 +103,22 @@
         width: 100%;
         padding: 0 20px;
         .products-header {
-            margin-top: 30px !important;
+            margin-top: 100px !important;
             padding: 0 20px;
         }
+    }
+    .left-leaves {
+        // display: block;
+        // position: relative !important;
+        top: -65px !important;
+        left: 10px !important;
+        width: 120px;
+    }
+    .right-leaves {
+        // display: none;
+        top: -65px !important;
+        right: 10px !important;
+        width: 120px;
     }
     .products-block-container {
         padding: 0 !important;

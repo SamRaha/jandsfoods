@@ -29,7 +29,6 @@ function About() {
                         <h2>Erudus Food Safety Compliant</h2>
                         <h2>Diverse product range</h2>
                         <h2>Full technical specifications, allergen information and nutritional data for all our products</h2>
-                        <h2>Earliest opening food cash and carry service in Leeds (5:30am - 2pm)</h2>
                     </div>
                 </div>
                 <div className="about-block-container">

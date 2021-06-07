@@ -10,9 +10,9 @@ function Products() {
             <div className="products-container">
                 <div className="clear"></div>
                 <div className="products-header">
-                    {/* <img src={LeftLeaves} className="left-leaves" alt="leftleaves" /> */}
+                    <img src={LeftLeaves} className="left-leaves" alt="leftleaves" />
                     <h1>Our Products</h1>
-                    {/* <img src={RightLeaves} className="right-leaves" alt="rightleaves" /> */}
+                    <img src={RightLeaves} className="right-leaves" alt="rightleaves" />
                     <p>Our adaptable service means we can source almost any product you’re looking for, so even if you don’t see what you need on our list of products, just give us a call or email us and we will be able to help. </p>
                 </div>
                 <div className="products-block-container">
