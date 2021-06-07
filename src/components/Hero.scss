@@ -5,6 +5,8 @@
     background-size: cover;
     background-image: url("../assets/hero-image.png");
     min-height: calc(100vh - 150px);
+    max-width: 1800px;
+    margin: auto;
     // min-height: calc(100vh - 150px);
     height: 100%;
     @include flexCenter(column);
@@ -77,6 +79,6 @@
 
 @media only screen and (min-width: 1800px) {
     .hero {
-        box-shadow: 0 0 4px 4px white inset;
+        box-shadow: 0 0 2px 2px white inset;
     }
 }

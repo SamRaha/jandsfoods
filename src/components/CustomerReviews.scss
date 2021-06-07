@@ -1,9 +1,13 @@
 @import "../variables.scss";
-.customer-reviews-container {
+
+.customer-reviews-background {
     background-color: #f6f6f8;
+}
+.customer-reviews-container {
     @include flexCenter(column);
-    height: 1088px;
-    width: 100%;
+    height: 1140px;
+    margin: auto;
+    max-width: 1800px;
     justify-content: flex-start;
     padding-top: 88px;
     position: relative;
@@ -41,6 +45,7 @@
         max-width: 1076px;
         @include flexCenter(row);
         align-items: flex-start;
+        // flex-wrap: wrap;
 
         .block {
             min-width: 278px;
@@ -60,17 +65,15 @@
             }
         }
     }
-    @media only screen and (max-width: 1076px) {
-        .blocks {
-            display: block;
-        }
-
-        .block {
-            text-align: justify;
-        }
-    }
 }
-@media only screen and (max-width: 1076px) {
+@media only screen and (max-width: 1433px) {
+    .blocks {
+        display: block;
+    }
+
+    .block {
+        text-align: justify;
+    }
     .customer-reviews-container {
         justify-content: flex-start !important;
         margin-top: 40px;
@@ -89,5 +92,11 @@
     }
     .carrots {
         width: 200px;
+    }
+}
+
+@media only screen and (max-width: 1433px) {
+    .blocks {
+        display: block !important;
     }
 }

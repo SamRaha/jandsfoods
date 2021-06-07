@@ -52,7 +52,7 @@
             }
         }
     }
-    @media only screen and (max-width: 1076px) {
+    @media only screen and (max-width: 1433px) {
         .blocks {
             display: block;
             flex: 1;
@@ -79,10 +79,13 @@
         }
     }
 }
-@media only screen and (max-width: 1076px) {
+@media only screen and (max-width: 1433px) {
     .what-we-do-container {
         justify-content: flex-start !important;
         padding-top: 120px;
         height: 100%;
     }
+}
+
+@media only screen and (max-width: 1433px) {
 }

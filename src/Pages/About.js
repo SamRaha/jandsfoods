@@ -33,7 +33,7 @@ function About() {
                     </div>
                 </div>
                 <div className="about-block-container">
-                    <h1 className="meet-the-team">Meet the Team</h1>
+                    <h1 className="meet-the-team">Meet Some the Team</h1>
                     <div className="about-block">
                         <div className="about-image-block michael"></div>
                         <div className="about-text-block">
