@@ -6,6 +6,7 @@ import Home from "./Pages/Home";
 import About from "./Pages/About";
 import Products from "./Pages/Products";
 import ScrollToTop from "./ScrollToTop";
+import Contact from "./components/Contact";
 
 function App() {
     return (
@@ -17,6 +18,7 @@ function App() {
                         <Route path="/" exact component={Home} />
                         <Route path="/about" component={About} />
                         <Route path="/products" exact component={Products} />
+                        {/* <Route path="/contact" exact component={Contact} /> */}
                     </Switch>
                 </ScrollToTop>
             </div>

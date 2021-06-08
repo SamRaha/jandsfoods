@@ -28,9 +28,9 @@ function NavigationBar() {
                         <Link onClick={() => setExpanded(false)} className="nav-link" to="/about">
                             About Us
                         </Link>
-                        <Nav.Link onClick={() => setExpanded(false)} className="call-button" href="tel:01132788266">
-                            Call Now <img src={Arrow} alt="" />
-                        </Nav.Link>
+                        <Link onClick={() => setExpanded(false)} className="call-button nav-link" to="/contact">
+                            Contact Us <img src={Arrow} alt="" />
+                        </Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
