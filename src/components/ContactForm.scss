@@ -3,6 +3,7 @@
 .red {
     color: red !important;
 }
+
 .contact-section {
     @include flexCenter(row);
     max-width: 1200px;

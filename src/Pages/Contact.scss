@@ -1,0 +1,27 @@
+@import "../variables.scss";
+.contact-container {
+    display: flex;
+    @include flexCenter(column);
+    max-width: 1800px !important;
+    margin: auto;
+    padding: 70px 70px 0 70px;
+
+    p {
+        font-family: "Roboto", sans-serif;
+    }
+    h1 {
+        font-family: "EB Garamond", serif;
+    }
+    .map-and-details-container {
+        @include flexCenter(row);
+        text-align: left;
+        margin-bottom: 100px;
+    }
+    .map-details {
+        flex: 2;
+    }
+    .google-map-container {
+        flex: 3;
+        padding-right: 30px;
+    }
+}

@@ -1,10 +1,10 @@
 import React from "react";
 import $ from "jquery";
-import "./Contact.scss";
+import "./ContactForm.scss";
 import ReCAPTCHA from "react-google-recaptcha";
 import dotenv from "dotenv";
 dotenv.config();
-function Contact() {
+function ContactForm() {
     const [reCaptchaCompleted, setreCaptchaCompleted] = React.useState(false);
     function onChange(value) {
         console.log("Captcha value:", value);
@@ -130,4 +130,4 @@ function Contact() {
     );
 }
 
-export default Contact;
+export default ContactForm;
