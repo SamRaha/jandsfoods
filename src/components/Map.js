@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
+import { GoogleMap, LoadScript, Marker, Label, MarkerWithLabel } from "@react-google-maps/api";
 // https://apidocs.geoapify.com/playground/icon
 
 // import "./Map.scss";
@@ -28,7 +28,7 @@ function Map() {
     return (
         <LoadScript googleMapsApiKey={GOOGLE_MAPS_API_KEY}>
             <GoogleMap center={location} mapContainerStyle={mapStyles} options={options} zoom={15}>
-                <Marker position={location} />,
+                <Marker position={location} label="J&S FOODS" />
             </GoogleMap>
         </LoadScript>
     );
