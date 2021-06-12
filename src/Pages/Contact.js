@@ -14,7 +14,7 @@ function Contact() {
                         <Map />
                     </div>
 
-                    <div className="map-details">
+                    <div className="map-details-container">
                         <div className="where-we-are">
                             <h1> Where We Are</h1>
                             <p>

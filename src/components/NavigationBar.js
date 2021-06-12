@@ -29,7 +29,8 @@ function NavigationBar() {
                             About Us
                         </Link>
                         <Link onClick={() => setExpanded(false)} className="call-button nav-link" to="/contact">
-                            Contact Us <img src={Arrow} alt="" />
+                            Contact Us
+                            {/* <img src={Arrow} alt="" /> */}
                         </Link>
                     </Nav>
                 </Navbar.Collapse>

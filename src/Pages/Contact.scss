@@ -16,12 +16,30 @@
         @include flexCenter(row);
         text-align: left;
         margin-bottom: 100px;
+        .google-map-container {
+            flex: 3;
+            padding-right: 30px;
+        }
+        .map-details-container {
+            flex: 2;
+        }
     }
-    .map-details {
-        flex: 2;
+}
+
+@media only screen and (max-width: 1076px) {
+    .map-and-details-container {
+        flex-direction: column !important;
     }
     .google-map-container {
-        flex: 3;
-        padding-right: 30px;
+        flex: 1 !important;
+        margin: auto;
+        padding: 0 !important;
+        order: 1;
+    }
+    .map-details-container {
+        flex: 1 !important;
+    }
+    .contact-container {
+        padding-top: 20px !important;
     }
 }
