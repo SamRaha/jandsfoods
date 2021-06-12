@@ -1,18 +1,17 @@
-import React, { useState, useEffect, useContext } from "react";
-import { GoogleMap, LoadScript, Marker, Label, MarkerWithLabel } from "@react-google-maps/api";
-import { useMediaQuery } from "react-responsive";
+import React, { useState, useEffect } from "react";
+import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 
 const GOOGLE_MAPS_API_KEY = process.env.REACT_APP_GOOGLE_MAPS_API_KEY;
 
 function Map() {
-    const [mapWidth, setMapWidth] = useState(undefined);
+    const [mapWidth, setMapWidth] = useState(window.innerWidth - 40);
     // console.log("distance: ", distance);
-    const isMobile = useMediaQuery({ query: "(max-width: 1076px)" });
+    // const isMobile = useMediaQuery({ query: "(max-width: 1076px)" });
 
     const mapStyles = {
         height: "500px",
         width: mapWidth,
-        maxWidth: "900px",
+        maxWidth: "850px",
     };
 
     function useWindowSize() {
@@ -20,7 +19,7 @@ function Map() {
         useEffect(() => {
             // Handler to call on window resize
             function handleResize() {
-                setMapWidth(window.innerWidth - 70);
+                setMapWidth(window.innerWidth - 40);
             }
             // Add event listener
             window.addEventListener("resize", handleResize);

@@ -22,7 +22,7 @@ function ContactForm() {
             alert("Please enter valid mobile number");
             return;
         }
-        if ($("#email-input").val() == "") {
+        if ($("#email-input").val() === "") {
             alert("Please enter your email id");
             return;
         }

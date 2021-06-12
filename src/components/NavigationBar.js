@@ -4,7 +4,7 @@ import "./NavigationBar.scss";
 import Logo from "../assets/logo2.jpg";
 import LogoMobile from "../assets/logo3.png";
 import { Link } from "react-router-dom";
-import Arrow from "../assets/arrow-vector.svg";
+// import Arrow from "../assets/arrow-vector.svg";
 
 function NavigationBar() {
     const [expanded, setExpanded] = useState(false);

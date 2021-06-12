@@ -1,7 +1,7 @@
 import React from "react";
 import Map from "../components/Map";
 import "./Contact.scss";
-import ContactForm from "../components/ContactForm";
+// import ContactForm from "../components/ContactForm";
 import Footer from "../components/Footer";
 
 function Contact() {
