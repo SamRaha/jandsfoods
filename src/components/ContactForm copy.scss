@@ -1,0 +1,98 @@
+@import "../variables.scss";
+
+.red {
+    color: red !important;
+}
+
+.contact-section {
+    @include flexCenter(row);
+    max-width: 1200px;
+    margin: auto;
+    color: white;
+    flex-wrap: wrap;
+    .contact-form-background {
+        background-color: $darkgreen;
+        padding: 20px 20px;
+        border-radius: 10px;
+    }
+    h1 {
+        font-weight: 800;
+        font-size: 48px;
+    }
+    .contact-brief-section {
+        height: 700px;
+        @include flexCenter(column);
+        align-items: flex-start;
+        justify-content: space-between;
+        flex: 1;
+        // border: 1px solid white;
+        .contact-text-container {
+        }
+        .parcel-girl-container {
+            .parcel-girl {
+                height: 600px;
+                margin-bottom: -162px;
+            }
+        }
+    }
+
+    .submit-button {
+        margin: auto;
+        background-color: white !important;
+        color: $darkgreen;
+    }
+    .contact-form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+
+        .contact-form-background {
+            height: 642px;
+            max-width: 500px;
+            width: 465px;
+            background: $darkgreen;
+            padding: 40px 50px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .contact-form-confirmation {
+            display: none;
+        }
+
+        .display-block {
+            display: block;
+        }
+
+        .display-none {
+            display: none;
+        }
+        form {
+            background-color: #173558;
+            border-radius: 2%;
+        }
+
+        label {
+            color: #ffffff;
+            margin-right: auto;
+        }
+
+        .terms {
+            font-size: 15px !important;
+        }
+
+        button[type="submit"] {
+            background-color: $green;
+            color: #ffffff;
+            min-width: 25%;
+            margin-left: 37.5%;
+        }
+
+        button[type="submit"]:hover {
+            background-color: $green;
+        }
+    }
+}

@@ -1,98 +1,54 @@
 @import "../variables.scss";
-
-.red {
-    color: red !important;
-}
-
-.contact-section {
-    @include flexCenter(row);
-    max-width: 1200px;
-    margin: auto;
-    color: white;
-    flex-wrap: wrap;
-    .contact-form-background {
-        background-color: $darkgreen;
-        padding: 20px 20px;
-        border-radius: 10px;
-    }
+.contact-form-div {
+    @include flexCenter(column);
+    height: 784px;
+    justify-content: flex-start;
+    padding-top: 50px;
+    background-color: #f6f6f8;
     h1 {
-        font-weight: 800;
-        font-size: 48px;
+        font-weight: 400;
     }
-    .contact-brief-section {
-        height: 700px;
+    p {
+        font-weight: 300;
+    }
+    .contact-form-contents {
+        width: 470px;
+        padding: 0 50px;
+    }
+    .contact-form-fields {
+    }
+    textarea,
+    input {
+        border: none;
+        background-color: #f6f6f8;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.432);
+        width: 100%;
+    }
+    #message-input {
+        height: auto;
+        width: 100%;
+    }
+    .recaptcha-div {
         @include flexCenter(column);
-        align-items: flex-start;
-        justify-content: space-between;
-        flex: 1;
-        // border: 1px solid white;
-        .contact-text-container {
-        }
-        .parcel-girl-container {
-            .parcel-girl {
-                height: 600px;
-                margin-bottom: -162px;
-            }
-        }
+        margin-top: 20px;
     }
-
     .submit-button {
-        margin: auto;
-        background-color: white !important;
-        color: $darkgreen;
+        margin-top: 20px;
+        width: 108px;
+        height: 52px;
+        font-size: 28px;
+        font-weight: 400;
+        color: white;
+        background-color: #277d2a;
+        border: none;
     }
-    .contact-form {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex: 1;
-
-        .contact-form-background {
-            height: 642px;
-            max-width: 500px;
-            width: 465px;
-            background: $darkgreen;
-            padding: 40px 50px;
-            margin: auto;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .contact-form-confirmation {
-            display: none;
-        }
-
-        .display-block {
-            display: block;
-        }
-
-        .display-none {
-            display: none;
-        }
-        form {
-            background-color: #173558;
-            border-radius: 2%;
-        }
-
-        label {
-            color: #ffffff;
-            margin-right: auto;
-        }
-
-        .terms {
-            font-size: 15px !important;
-        }
-
-        button[type="submit"] {
-            background-color: $green;
-            color: #ffffff;
-            min-width: 25%;
-            margin-left: 37.5%;
-        }
-
-        button[type="submit"]:hover {
-            background-color: $green;
+    .terms {
+        margin-top: 20px;
+        p {
+            margin: 0 !important;
         }
     }
+}
+#contact-form-confirmation {
+    display: none;
 }

@@ -11,7 +11,7 @@ function Map() {
     const mapStyles = {
         height: "500px",
         width: mapWidth,
-        maxWidth: "850px",
+        maxWidth: "900px",
     };
 
     function useWindowSize() {

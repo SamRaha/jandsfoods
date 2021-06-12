@@ -26,6 +26,12 @@
             min-width: 300px;
         }
     }
+    .contact-form-container {
+        // border: 1px solid red;
+        width: 100%;
+        margin: auto;
+        text-align: center !important;
+    }
 }
 
 @media only screen and (max-width: 1076px) {
@@ -49,5 +55,10 @@
 @media only screen and (max-width: 1319px) {
     .google-map-container {
         order: 1;
+        @include flexCenter(row);
+        padding-right: 0px !important;
+    }
+    .map-details-container {
+        max-width: 900px;
     }
 }
