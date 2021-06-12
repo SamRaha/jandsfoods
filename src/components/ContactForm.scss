@@ -1,10 +1,14 @@
 @import "../variables.scss";
 .contact-form-div {
     @include flexCenter(column);
-    height: 784px;
+    height: 100%;
+    padding-bottom: 70px;
     justify-content: flex-start;
     padding-top: 50px;
     background-color: #f6f6f8;
+    position: relative;
+    max-width: 1800px !important;
+    margin: auto;
     h1 {
         font-weight: 400;
     }
@@ -43,10 +47,46 @@
         border: none;
     }
     .terms {
+        text-align: justify;
+        width: 304px;
+        margin: auto;
         margin-top: 20px;
         p {
             margin: 0 !important;
+            font-size: 16px;
         }
+    }
+
+    .contact-form-fields {
+        text-align: left;
+        label {
+            font-family: "Roboto", sans-serif;
+            font-weight: 300;
+            font-size: 20px;
+            margin-top: 15px;
+        }
+        input {
+            font-size: 20px;
+            font-family: "Roboto", sans-serif;
+            height: 40px;
+            font-weight: 300;
+        }
+        textarea {
+            font-size: 20px;
+            font-weight: 300;
+            font-family: "Roboto", sans-serif;
+        }
+    }
+    .left-leaves-contact-form {
+        position: absolute;
+        left: 15%;
+        bottom: 45%;
+    }
+    .right-leaves-contact-form {
+        position: absolute;
+        position: absolute;
+        right: 15%;
+        bottom: 45%;
     }
 }
 #contact-form-confirmation {

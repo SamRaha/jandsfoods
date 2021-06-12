@@ -29,9 +29,9 @@ function Contact() {
                         </div>
                     </div>
                 </div>
-                <div className="contact-form-container">
-                    <ContactForm />
-                </div>
+            </div>
+            <div className="contact-form-container">
+                <ContactForm />
             </div>
             <Footer />
         </>

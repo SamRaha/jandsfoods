@@ -2,17 +2,18 @@
 .contact-container {
     display: flex;
     @include flexCenter(column);
-    max-width: 1800px !important;
     margin: auto;
     padding: 70px 70px 0 70px;
 
     p {
         font-family: "Roboto", sans-serif;
+        font-size: 20px;
     }
     h1 {
         font-family: "EB Garamond", serif;
     }
     .map-and-details-container {
+        max-width: 1800px !important;
         @include flexCenter(row);
         text-align: left;
         margin-bottom: 100px;
@@ -26,11 +27,16 @@
             min-width: 300px;
         }
     }
-    .contact-form-container {
-        // border: 1px solid red;
-        width: 100%;
-        margin: auto;
-        text-align: center !important;
+}
+.contact-form-container {
+    // border: 1px solid red;
+    width: 100%;
+    justify-content: center;
+    margin: auto;
+    background-color: #f6f6f8 !important;
+    text-align: center !important;
+    p {
+        font-family: "Roboto", sans-serif;
     }
 }
 

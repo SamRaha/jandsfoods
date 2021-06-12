@@ -4,6 +4,8 @@ import "./ContactForm.scss";
 import ReCAPTCHA from "react-google-recaptcha";
 import dotenv from "dotenv";
 import TextareaAutosize from "react-autosize-textarea";
+import LeftLeaves from "../assets/left-leaves-contact-form.svg";
+import RightLeaves from "../assets/right-leaves-contact-form.svg";
 dotenv.config();
 
 function ContactForm() {
@@ -90,11 +92,11 @@ function ContactForm() {
                         </p>
                     </div>
                     <div id="contact-form-content" className="contact-form-contents">
+                        <div className="contact-form-title">
+                            <h1>Send us a message</h1>
+                            <p>We will contact you as soon as possible</p>
+                        </div>
                         <div className="contact-form-fields">
-                            <div className="contact-form-title">
-                                <h1>Send us a message</h1>
-                                <p>We will contact you as soon as possible</p>
-                            </div>
                             <label htmlFor="nameInput">Name *</label>
                             <input type="text" id="name-input" />
                             <label htmlFor="phonenumberinput">Mobile Number *</label>
@@ -102,7 +104,7 @@ function ContactForm() {
                             <label htmlFor="exampleInputEmail1">Email *</label>
                             <input type="email" id="email-input" />
                             <label htmlFor="messageinput">Message *</label>
-                            <TextareaAutosize id="message-input" onResize={(e) => {}} />
+                            <TextareaAutosize rows="2" id="message-input" onResize={(e) => {}} />
                         </div>
                         <div className="g-recaptcha" data-sitekey="6Lc7cVMUAAAAAM1yxf64wrmO8gvi8A1oQ_ead1ys"></div>
 
@@ -124,6 +126,8 @@ function ContactForm() {
                     </div>
                 </form>
             </div>
+            <img className="left-leaves-contact-form" src={LeftLeaves} alt="" />
+            <img className="right-leaves-contact-form" src={RightLeaves} alt="" />
         </div>
     );
 }
