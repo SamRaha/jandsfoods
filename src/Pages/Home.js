@@ -14,7 +14,7 @@ function Home() {
                 <Hero />
                 <WhatWeDo />
                 <CustomerReviews />
-                <TwitterFeed />
+                {/* <TwitterFeed /> */}
             </div>
             <Footer />
         </>
