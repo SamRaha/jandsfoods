@@ -9,6 +9,9 @@
     position: relative;
     max-width: 1800px !important;
     margin: auto;
+    .contact-form {
+        z-index: 1;
+    }
     h1 {
         font-weight: 400;
     }
@@ -77,18 +80,30 @@
             font-family: "Roboto", sans-serif;
         }
     }
+    .background-leaves {
+        position: absolute;
+        height: 770px;
+        width: 100%;
+    }
     .left-leaves-contact-form {
         position: absolute;
         left: 15%;
         bottom: 45%;
+        z-index: 20;
     }
     .right-leaves-contact-form {
         position: absolute;
-        position: absolute;
         right: 15%;
         bottom: 45%;
+        z-index: 20;
     }
 }
 #contact-form-confirmation {
     display: none;
+}
+
+@media only screen and (max-width: 1076px) {
+    .background-leaves {
+        display: none !important;
+    }
 }
