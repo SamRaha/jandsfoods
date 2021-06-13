@@ -19,7 +19,7 @@
         font-weight: 300;
     }
     .contact-form-contents {
-        width: 470px;
+        max-width: 470px;
         padding: 0 50px;
     }
     .contact-form-fields {
@@ -105,5 +105,11 @@
 @media only screen and (max-width: 1076px) {
     .background-leaves {
         display: none !important;
+    }
+    .contact-form-contents {
+        padding: 0 !important;
+    }
+    .contact-form-div {
+        padding: 25px;
     }
 }

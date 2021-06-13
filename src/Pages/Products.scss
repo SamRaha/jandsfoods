@@ -107,21 +107,22 @@
         padding: 0 25px !important;
         .products-header {
             margin-top: 100px !important;
+            .left-leaves {
+                display: none;
+                // position: relative !important;
+                top: -70px !important;
+                left: 10px !important;
+                width: 120px;
+            }
+            .right-leaves {
+                display: none;
+                top: -70px !important;
+                right: 10px !important;
+                width: 120px;
+            }
         }
     }
-    .left-leaves {
-        // display: block;
-        // position: relative !important;
-        top: -70px !important;
-        left: 10px !important;
-        width: 120px;
-    }
-    .right-leaves {
-        // display: none;
-        top: -70px !important;
-        right: 10px !important;
-        width: 120px;
-    }
+
     .products-block-container {
         padding: 0 !important;
         width: 100% !important;
