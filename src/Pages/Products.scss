@@ -64,7 +64,7 @@
                 background-repeat: no-repeat;
                 background-size: cover;
                 width: 574px;
-
+                // min-height: 200px;
                 height: 100%;
             }
             .products-text-block {
@@ -104,9 +104,9 @@
     }
     .products-container {
         width: 100%;
-        padding: 0 25px !important;
+        padding: 30px 25px 0 !important;
         .products-header {
-            margin-top: 100px !important;
+            margin: 0px !important;
             .left-leaves {
                 display: none;
                 // position: relative !important;
@@ -153,6 +153,9 @@
             a {
                 margin: 10px 0 !important;
                 padding: 0 !important;
+            }
+            p {
+                text-align: left !important;
             }
         }
     }

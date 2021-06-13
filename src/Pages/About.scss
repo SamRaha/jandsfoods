@@ -65,6 +65,7 @@
         & h1 {
             font-size: 42px;
             margin-bottom: 15px;
+            text-align: center;
         }
         & p {
             text-align: justify;
@@ -160,14 +161,14 @@
         font-size: 35px !important;
     }
     h2 {
-        font-size: 22px !important;
+        font-size: 24px !important;
         margin: 10px 0 !important;
     }
     .about-container {
         width: 100%;
-        padding: 0 25px !important;
+        padding: 30px 25px 0 !important;
         .about-header {
-            margin-top: 30px !important;
+            margin-top: 0px !important;
             flex-direction: column;
             .about-us {
                 padding: 0;
@@ -222,6 +223,9 @@
             }
             h3 {
                 margin-top: 12px !important;
+            }
+            p {
+                text-align: left !important;
             }
         }
     }
