@@ -3,7 +3,6 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    // background-image: url("../assets/hero-image.png");
     min-height: calc(100vh - 100px);
     max-width: 1800px;
     margin: auto;
@@ -59,9 +58,9 @@
     }
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 1076px) {
     .hero {
-        height: calc(100vh - 75.5px);
+        height: calc(100vh - 70.5px);
         align-items: center;
         justify-content: flex-start;
         padding: 25px 20px !important;
@@ -79,13 +78,6 @@
         .products-button {
             margin-top: 25px !important;
         }
-    }
-}
-
-@media only screen and (max-width: 1076px) {
-    .hero {
-        background-image: url("../assets/hero-background2.png");
-        padding-left: 20px !important;
     }
 }
 

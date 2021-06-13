@@ -7,6 +7,7 @@ function Map() {
     const [mapWidth, setMapWidth] = useState(window.innerWidth - 40);
     // console.log("distance: ", distance);
     // const isMobile = useMediaQuery({ query: "(max-width: 1076px)" });
+    // import { useMediaQuery } from 'react-responsive'
 
     const mapStyles = {
         height: "500px",
