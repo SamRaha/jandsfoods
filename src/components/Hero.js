@@ -51,6 +51,7 @@ function Hero() {
             window[image] = image;
             preLoadedImage.push(image);
         });
+        console.log(preLoadedImage);
     }, []);
 
     return (
