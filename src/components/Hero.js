@@ -43,6 +43,15 @@ function Hero() {
         }, 7000);
         return () => clearInterval(interval);
     }, [imgState.img]);
+    const preLoadedImage = [];
+    useEffect(() => {
+        imgArray.forEach((picture) => {
+            const image = new Image();
+            image.src = picture;
+            window[image] = image;
+            preLoadedImage.push(image);
+        });
+    }, []);
 
     return (
         <div>

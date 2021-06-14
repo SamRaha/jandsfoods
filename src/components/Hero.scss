@@ -8,13 +8,17 @@
     margin: auto;
     transition: background-image 0.5s linear;
     animation: fadeIn 1s;
-
     // min-height: calc(100vh - 150px);
     // transform: scaleX(-1);
     height: 100%;
     @include flexCenter(column);
     align-items: flex-start;
     padding-left: 70px;
+    backface-visibility: hidden;
+    transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
     @keyframes fadeIn {
         0% {
             opacity: 0.3;
