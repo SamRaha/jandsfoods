@@ -23,7 +23,16 @@ function Hero() {
     });
     const imgArray = [backgroundImage5, backgroundImage1, backgroundImage3, backgroundImage4, backgroundImage2];
     const imgArrayMobile = [mobileBackground3, mobileBackground4, mobileBackground1, mobileBackground2, mobileBackground5];
-
+    const preLoadedImage = [];
+    useEffect(() => {
+        imgArray.forEach((picture) => {
+            const image = new Image();
+            image.src = picture;
+            window[image] = image;
+            preLoadedImage.push(image);
+        });
+        console.log(preLoadedImage);
+    }, []);
     useEffect(() => {
         const interval = setInterval(() => {
             console.log("This will run every second!");
@@ -43,16 +52,6 @@ function Hero() {
         }, 7000);
         return () => clearInterval(interval);
     }, [imgState.img]);
-    const preLoadedImage = [];
-    useEffect(() => {
-        imgArray.forEach((picture) => {
-            const image = new Image();
-            image.src = picture;
-            window[image] = image;
-            preLoadedImage.push(image);
-        });
-        console.log(preLoadedImage);
-    }, []);
 
     return (
         <div>
