@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import { useMediaQuery } from "react-responsive";
 import "./Hero.scss";
 import Arrow from "../assets/arrow-vector.svg";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import backgroundImage1 from "../assets/backgroundImage1.jpg";
 import backgroundImage2 from "../assets/backgroundImage2.jpg";
 import backgroundImage3 from "../assets/backgroundImage3.jpg";
@@ -23,47 +25,59 @@ function Hero() {
     });
     const imgArray = [backgroundImage5, backgroundImage1, backgroundImage3, backgroundImage4, backgroundImage2];
     const imgArrayMobile = [mobileBackground3, mobileBackground4, mobileBackground1, mobileBackground2, mobileBackground5];
-    const preLoadedImage = [];
+    console.log("imgArray: ", imgArray);
+    // const preLoadedImage = [];
     useEffect(() => {
         imgArray.forEach((picture) => {
             const image = new Image();
             image.src = picture;
             window[image] = image;
-            preLoadedImage.push(image);
+            new Image().src = image;
         });
-        console.log(preLoadedImage);
     }, []);
-    useEffect(() => {
-        const interval = setInterval(() => {
-            console.log("This will run every second!");
-            if (imgState.img === 4) {
-                setImgState((prev) => ({
-                    ...prev,
-                    img: 0,
-                }));
-            } else {
-                setImgState((prev) => ({
-                    ...prev,
-                    img: imgState.img + 1,
-                }));
-            }
-            console.log(imgState.img);
-            console.log(`url(${imgArray[imgState.img]})`);
-        }, 7000);
-        return () => clearInterval(interval);
-    }, [imgState.img]);
+    // useEffect(() => {
+    //     const interval = setInterval(() => {
+    //         console.log("This will run every second!");
+    //         if (imgState.img === 4) {
+    //             setImgState((prev) => ({
+    //                 ...prev,
+    //                 img: 0,
+    //             }));
+    //         } else {
+    //             setImgState((prev) => ({
+    //                 ...prev,
+    //                 img: imgState.img + 1,
+    //             }));
+    //         }
+    //         console.log(imgState.img);
+    //         console.log(`url(${imgArray[imgState.img]})`);
+    //     }, 7000);
+    //     return () => clearInterval(interval);
+    // }, [imgState.img]);
 
     return (
         <div>
-            <div className="hero" style={isMobile ? { backgroundImage: `url(${imgArrayMobile[imgState.img]})` } : { backgroundImage: `url(${imgArray[imgState.img]})` }}>
-                <h1>Fresh Food Wholesalers</h1>
-                <p>Leeds-based food wholesalers and food cash and carry; serving the catering industry since 1977.</p>
-                <Link to="/products">
-                    <button className="products-button">
-                        Explore our products <img src={Arrow} alt="" />
-                    </button>{" "}
-                </Link>
-                <img className="fairtrade" src={fairtradeImage} alt="fairtradeImage" />
+            <div className="carousel-div">
+                <Carousel autoPlay showStatus={false} showThumbs={false} swipeable showArrows emulateTouch infiniteLoop interval={7000}>
+                    <div className="carousel-img img1"></div>
+                    <div className="carousel-img img2"></div>
+                    <div className="carousel-img img3"></div>
+                    <div className="carousel-img img4"></div>
+                    <div className="carousel-img img5"></div>
+                </Carousel>
+            </div>
+            {/* <div className="hero" style={isMobile ? { backgroundImage: `url(${imgArrayMobile[imgState.img]})` } : { backgroundImage: `url(${imgArray[imgState.img]})` }}> */}
+            <div className="hero-container">
+                <div className="hero">
+                    <h1>Fresh Food Wholesalers</h1>
+                    <p>Leeds-based food wholesalers and food cash and carry; serving the catering industry since 1977.</p>
+                    <Link to="/products">
+                        <button className="products-button">
+                            Explore our products <img src={Arrow} alt="" />
+                        </button>
+                    </Link>
+                    <img className="fairtrade" src={fairtradeImage} alt="fairtradeImage" />
+                </div>
             </div>
         </div>
     );

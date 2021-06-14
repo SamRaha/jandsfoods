@@ -1,24 +1,90 @@
 @import "../variables.scss";
-.hero {
+.carousel-div {
+    height: calc(100vh - 100px);
+    animation: fadeIn 1s;
+    background-repeat: no-repeat;
+}
+.carousel-img {
+    height: calc(100vh - 100px);
+    background-repeat: no-repeat;
+}
+.img1 {
+    background-image: url("../assets/backgroundImage1.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    min-height: calc(100vh - 100px);
+}
+.img2 {
+    background-image: url("../assets/backgroundImage2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.img3 {
+    background-image: url("../assets/backgroundImage3.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.img4 {
+    background-image: url("../assets/backgroundImage4.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.img5 {
+    background-image: url("../assets/backgroundImage5.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.hero-container {
+    max-width: 1800px;
+    @include flexCenter(column);
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+    margin: auto;
+}
+.hero {
+    // min-height: calc(100vh - 100px);
+    position: absolute;
+    top: 0;
     max-width: 1800px;
     margin: auto;
-    transition: background-image 0.5s linear;
-    animation: fadeIn 1s;
+    background-repeat: no-repeat;
+    // transition: background-image 0.5s linear;
+    // animation: fadeIn 1s;
     // min-height: calc(100vh - 150px);
     // transform: scaleX(-1);
     height: 100%;
     @include flexCenter(column);
     align-items: flex-start;
     padding-left: 70px;
-    backface-visibility: hidden;
-    transform: translate3d(0, 0, 0);
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -ms-backface-visibility: hidden;
+    // backface-visibility: hidden;
+    // transform: translate3d(0, 0, 0);
+    // -webkit-backface-visibility: hidden;
+    // -moz-backface-visibility: hidden;
+    // -ms-backface-visibility: hidden;
+    // .hero {
+    //     background-repeat: no-repeat;
+    //     background-position: center;
+    //     background-size: cover;
+    //     min-height: calc(100vh - 100px);
+    //     max-width: 1800px;
+    //     margin: auto;
+    //     // transition: background-image 0.5s linear;
+    //     animation: fadeIn 1s;
+    //     // min-height: calc(100vh - 150px);
+    //     // transform: scaleX(-1);
+    //     height: 100%;
+    //     @include flexCenter(column);
+    //     align-items: flex-start;
+    //     padding-left: 70px;
+    //     // backface-visibility: hidden;
+    //     // transform: translate3d(0, 0, 0);
+    //     // -webkit-backface-visibility: hidden;
+    //     // -moz-backface-visibility: hidden;
+    //     // -ms-backface-visibility: hidden;
     @keyframes fadeIn {
         0% {
             opacity: 0.3;
@@ -69,7 +135,7 @@
         justify-content: flex-start;
         padding: 25px 20px !important;
         align-items: center;
-
+        margin-top: 75.5px;
         p {
             text-align: center !important;
         }
@@ -87,10 +153,34 @@
             margin-top: 25px !important;
         }
     }
+    .hero-container {
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    .carousel-div {
+        height: calc(100vh - 75.5px) !important;
+        padding: 0 !important;
+    }
+
+    .img1 {
+        background-image: url("../assets/mobileBackground1.jpg");
+    }
+    .img2 {
+        background-image: url("../assets/mobileBackground2.jpg");
+    }
+    .img3 {
+        background-image: url("../assets/mobileBackground3.jpg");
+    }
+    .img4 {
+        background-image: url("../assets/mobileBackground4.jpg");
+    }
+    .img5 {
+        background-image: url("../assets/mobileBackground5.jpg");
+    }
 }
 
 @media only screen and (min-width: 1800px) {
     .hero {
-        box-shadow: 0 0 2px 2px white inset;
+        // box-shadow: 0 0 2px 2px white inset;
     }
 }
