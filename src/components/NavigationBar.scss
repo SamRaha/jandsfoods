@@ -12,8 +12,18 @@
     max-width: 1800px;
     margin: auto;
 }
-.border-bottom-green {
-    box-shadow: 0 0 1px rgb(44, 44, 44);
+.border-bottom-black {
+    box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.164);
+    animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0.3;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .nav-link {

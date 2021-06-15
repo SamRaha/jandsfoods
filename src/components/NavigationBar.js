@@ -27,8 +27,8 @@ function NavigationBar() {
     const [expanded, setExpanded] = useState(false);
     return (
         <div id="Navbar">
-            <div className="nav-background"></div>
-            <Navbar expanded={expanded} className={`Navbar fixed-top ${scroll === true ? `` : `border-bottom-green`}`} collapseOnSelect expand="lg" variant="light">
+            <div className={`nav-background ${scroll === true ? `` : `border-bottom-black`}`}></div>
+            <Navbar expanded={expanded} className="Navbar fixed-top" collapseOnSelect expand="lg" variant="light">
                 <Navbar.Brand href="/">
                     <img alt="" src={Logo} width="200px" height="100%" className="Navbar-brand d-inline-block align-center nav-logo desktop-logo" />
                     <img alt="" src={LogoMobile} width="200px" height="100%" className="Navbar-brand d-inline-block align-center nav-logo mobile-logo" />

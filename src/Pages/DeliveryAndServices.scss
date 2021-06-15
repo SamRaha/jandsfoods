@@ -40,7 +40,7 @@
         margin-bottom: 60px;
         margin-top: 60px;
         font-size: 42px;
-        font-weight: 400;
+        font-weight: 500;
     }
     & h4 {
         margin-bottom: 30px;
@@ -60,7 +60,8 @@
             min-width: 300px;
             margin: 0 30px;
             text-align: center;
-            width: 500px;
+            flex: 1;
+            // width: 500px;
 
             p {
                 text-align: justify;
@@ -77,21 +78,31 @@
         justify-content: flex-start !important;
         padding-top: 120px;
         height: 100%;
-        .mixed-fruits-right {
-            width: 200px;
+        padding-bottom: 150px !important;
+        .mixed-fruits-left {
+            width: 270px;
+            left: 50%;
+            transform: translate(-50%, 50%);
+            bottom: 70px;
         }
         .mixed-fruits-right {
-            width: 70px;
+            width: 150px;
+            bottom: 0px;
+            right: 25px;
+            display: none !important;
         }
 
         & h1 {
             margin: 0 !important;
-            margin-bottom: 20px !important;
+            margin-bottom: 40px !important;
         }
         .blocks {
             display: block;
             flex: 1;
             // margin: 0 25px !important;
+        }
+        .clear {
+            height: 0px !important;
         }
 
         .left-leaves {
@@ -100,15 +111,19 @@
             top: -65px !important;
             left: 10px !important;
             width: 120px;
+            display: none !important;
         }
         .right-leaves {
             // display: none;
             top: -65px !important;
             right: 10px !important;
             width: 120px;
+            display: none !important;
         }
         .block {
             text-align: justify;
+            min-width: 278px !important;
+            max-width: 500px !important;
         }
     }
 }
