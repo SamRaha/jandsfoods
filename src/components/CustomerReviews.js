@@ -4,7 +4,6 @@ import Carrots from "../assets/carrots.svg";
 import Avacado from "../assets/avacado.svg";
 import Stars from "../assets/stars.svg";
 function CustomerReviews() {
-    console.log(window.innerWidth);
     return (
         <div className="customer-reviews-background">
             <div className="customer-reviews-container">

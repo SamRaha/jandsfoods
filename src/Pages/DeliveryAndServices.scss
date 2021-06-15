@@ -1,10 +1,28 @@
 @import "../variables.scss";
 
-.what-we-do-container {
+.delivery-and-services-container {
     @include flexCenter(column);
-    height: 827px;
+    max-width: 1800px;
+    margin: auto;
+    height: 100%;
     width: 100%;
-    .what-we-do-title {
+    padding-bottom: 200px;
+    position: relative;
+    .clear {
+        height: 200px;
+    }
+    .mixed-fruits-left {
+        position: absolute;
+        bottom: 40px;
+        left: 50px;
+    }
+    .mixed-fruits-right {
+        position: absolute;
+        bottom: -10px;
+        right: 100px;
+    }
+
+    .delivery-and-services-title {
         @include flexCenter(row);
         position: relative;
         .left-leaves {
@@ -33,16 +51,16 @@
     }
 
     .blocks {
-        max-width: 1076px;
+        max-width: 1249px;
         height: 100%;
         @include flexCenter(row);
         align-items: flex-start;
         // flex-wrap: wrap;
         .block {
-            min-width: 278px;
+            min-width: 300px;
             margin: 0 30px;
             text-align: center;
-            max-width: 500px;
+            width: 500px;
 
             p {
                 text-align: justify;
@@ -55,35 +73,42 @@
 }
 
 @media only screen and (max-width: 1433px) {
-    .what-we-do-container {
+    .delivery-and-services-container {
         justify-content: flex-start !important;
         padding-top: 120px;
         height: 100%;
+        .mixed-fruits-right {
+            width: 200px;
+        }
+        .mixed-fruits-right {
+            width: 70px;
+        }
+
         & h1 {
             margin: 0 !important;
             margin-bottom: 20px !important;
         }
-    }
-    .blocks {
-        display: block;
-        flex: 1;
-        // margin: 0 25px !important;
-    }
+        .blocks {
+            display: block;
+            flex: 1;
+            // margin: 0 25px !important;
+        }
 
-    .left-leaves {
-        // display: block;
-        // position: relative !important;
-        top: -65px !important;
-        left: 10px !important;
-        width: 120px;
-    }
-    .right-leaves {
-        // display: none;
-        top: -65px !important;
-        right: 10px !important;
-        width: 120px;
-    }
-    .block {
-        text-align: justify;
+        .left-leaves {
+            // display: block;
+            // position: relative !important;
+            top: -65px !important;
+            left: 10px !important;
+            width: 120px;
+        }
+        .right-leaves {
+            // display: none;
+            top: -65px !important;
+            right: 10px !important;
+            width: 120px;
+        }
+        .block {
+            text-align: justify;
+        }
     }
 }

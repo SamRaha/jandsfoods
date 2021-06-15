@@ -7,6 +7,7 @@ import About from "./Pages/About";
 import Products from "./Pages/Products";
 import ScrollToTop from "./ScrollToTop";
 import Contact from "./Pages/Contact";
+import DeliveryAndServices from "./Pages/DeliveryAndServices";
 
 function App() {
     return (
@@ -19,6 +20,7 @@ function App() {
                         <Route path="/about" component={About} />
                         <Route path="/products" exact component={Products} />
                         <Route path="/contact" exact component={Contact} />
+                        <Route path="/deliveryandservices" exact component={DeliveryAndServices} />
                     </Switch>
                 </ScrollToTop>
             </div>

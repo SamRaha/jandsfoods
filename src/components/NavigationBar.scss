@@ -1,4 +1,10 @@
 @import "../variables.scss";
+.nav-background {
+    width: 100%;
+    background-color: white !important;
+    height: 100px;
+    position: fixed;
+}
 .Navbar {
     background-color: white;
     height: 100px;
@@ -6,6 +12,10 @@
     max-width: 1800px;
     margin: auto;
 }
+.border-bottom-green {
+    box-shadow: 0 0 1px rgb(44, 44, 44);
+}
+
 .nav-link {
     color: black !important;
     font-family: "Roboto", sans-serif;
@@ -60,5 +70,8 @@
     }
     .desktop-logo {
         display: none !important;
+    }
+    .nav-background {
+        height: 70px !important;
     }
 }
