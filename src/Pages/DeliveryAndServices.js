@@ -8,8 +8,8 @@ import MixedFruitsLeft from "../assets/mixed-fruits-left.svg";
 function DeliveryAndServices() {
     return (
         <div>
+            <div className="clear"></div>
             <div className="delivery-and-services-container">
-                <div className="clear"></div>
                 <div className="delivery-and-services-content">
                     <div className="delivery-and-services-title">
                         <img src={LeftLeaves} className="left-leaves" alt="leftleaves" />

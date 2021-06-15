@@ -11,14 +11,16 @@
         margin-bottom: 50px;
         position: relative;
         .left-leaves {
+            width: 170px;
             position: absolute;
-            left: 10px;
-            top: -120px;
+            left: -15px;
+            top: -100px;
         }
         .right-leaves {
+            width: 170px;
             position: absolute;
-            right: 10px;
-            top: -120px;
+            right: -15px;
+            top: -100px;
         }
         & h1 {
             font-size: 42px;

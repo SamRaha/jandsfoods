@@ -8,9 +8,7 @@
     width: 100%;
     padding-bottom: 200px;
     position: relative;
-    .clear {
-        height: 200px;
-    }
+
     .mixed-fruits-left {
         position: absolute;
         bottom: 40px;
@@ -23,17 +21,21 @@
     }
 
     .delivery-and-services-title {
-        @include flexCenter(row);
+        max-width: 600px;
+        margin-top: 140px !important;
+        margin: auto;
         position: relative;
         .left-leaves {
+            width: 170px;
             position: absolute;
-            left: 230px;
-            top: -60px;
+            left: -15px;
+            top: -100px;
         }
         .right-leaves {
+            width: 170px;
             position: absolute;
-            right: 230px;
-            top: -60px;
+            right: -15px;
+            top: -100px;
         }
     }
     & h1 {
@@ -76,7 +78,6 @@
 @media only screen and (max-width: 1433px) {
     .delivery-and-services-container {
         justify-content: flex-start !important;
-        padding-top: 120px;
         height: 100%;
         padding-bottom: 150px !important;
         .mixed-fruits-left {
@@ -84,6 +85,9 @@
             left: 50%;
             transform: translate(-50%, 50%);
             bottom: 70px;
+        }
+        .delivery-and-services-title {
+            margin-top: 30px !important;
         }
         .mixed-fruits-right {
             width: 150px;
@@ -102,7 +106,7 @@
             // margin: 0 25px !important;
         }
         .clear {
-            height: 0px !important;
+            height: 75.5px !important;
         }
 
         .left-leaves {

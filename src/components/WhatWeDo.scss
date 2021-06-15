@@ -63,6 +63,19 @@
             margin: 0 !important;
             margin-bottom: 20px !important;
         }
+        .left-leaves {
+            // display: block;
+            // position: relative !important;
+            top: -65px !important;
+            left: 10px !important;
+            width: 120px;
+        }
+        .right-leaves {
+            // display: none;
+            top: -65px !important;
+            right: 10px !important;
+            width: 120px;
+        }
     }
     .blocks {
         display: block;
@@ -70,19 +83,6 @@
         // margin: 0 25px !important;
     }
 
-    .left-leaves {
-        // display: block;
-        // position: relative !important;
-        top: -65px !important;
-        left: 10px !important;
-        width: 120px;
-    }
-    .right-leaves {
-        // display: none;
-        top: -65px !important;
-        right: 10px !important;
-        width: 120px;
-    }
     .block {
         text-align: justify;
     }

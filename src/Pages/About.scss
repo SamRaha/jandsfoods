@@ -5,6 +5,7 @@
     margin: auto;
     @include flexCenter(column);
     padding: 0 70px;
+    padding-top: 100px;
 
     .about-header {
         width: 100%;
@@ -17,11 +18,28 @@
         max-width: 1148px;
 
         .about-us {
-            padding-right: 100px;
             text-align: justify;
             max-width: 1000px !important;
             margin: auto;
             margin-bottom: 50px;
+            position: relative;
+            .about-us-title {
+                position: relative;
+                max-width: 600px;
+                margin: auto;
+            }
+            .left-leaves {
+                width: 170px;
+                position: absolute;
+                left: -15px;
+                top: -100px;
+            }
+            .right-leaves {
+                width: 170px;
+                position: absolute;
+                right: -15px;
+                top: -100px;
+            }
         }
         .stars-container {
             @include flexCenter(row);
@@ -151,6 +169,12 @@
 @media only screen and (max-width: 1076px) {
     .stars-container {
         flex-wrap: wrap;
+    }
+    .left-leaves {
+        display: none !important;
+    }
+    .right-leaves {
+        display: none !important;
     }
     .family-vector {
         // display: none !important;

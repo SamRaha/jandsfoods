@@ -2,6 +2,8 @@ import React from "react";
 import Footer from "../components/Footer";
 import "./About.scss";
 import FamilyVector from "../assets/FamilyVector.svg";
+import RightLeaves from "../assets/Right-Leaves.svg";
+import LeftLeaves from "../assets/Left-Leaves.svg";
 
 function About() {
     return (
@@ -10,7 +12,11 @@ function About() {
                 <div className="clear"></div>
                 <div className="about-header">
                     <div className="about-us">
-                        <h1>A little about us</h1>
+                        <div className="about-us-title">
+                            <img src={LeftLeaves} className="left-leaves" alt="leftleaves" />
+                            <h1>A Little About Us</h1>
+                            <img src={RightLeaves} className="right-leaves" alt="rightleaves" />
+                        </div>
                         <p>
                             Established in 1977 by our founders, Tony Stevens and Bernard Hudson, J and S Foods began by distributing pies and cooked meats to customers throughout Yorkshire. From the outset, it was their core aim to provide a service
                             that could not be beat, whether it was an emergency order or a reliable daily delivery. <br></br>
