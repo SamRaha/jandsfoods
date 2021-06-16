@@ -21,16 +21,18 @@ function DeliveryAndServices() {
                             <h4>Our Food Service Delivery Team</h4>
                             <p>
                                 The team here at J and S Foods has been hand-picked to ensure you get the best service every single time. You are likely to get to know your delivery team pretty well, and they will always go the extra mile to
-                                guarantee we meet your wholesale food needs. Nothing is ever too much trouble, so get in touch today and we will show you how food service deliveries should be.
+                                guarantee we meet your wholesale food needs. <br></br>
+                                <br></br> Nothing is ever too much trouble, so get in touch today and we will show you how food service deliveries should be.
                             </p>
                             <p></p>
                         </div>
                         <div className="block">
                             <h4>Reliable, Flexible and Responsive</h4>
                             <p>
-                                Reliable, flexible, responsive food service delivery is what we do best, and we pride ourselves on the fact that we will go the extra mile to get your wholesale food order to you exactly when you need it. We deliver
-                                all our fresh, frozen and ambient wholesale food products from our multi-purpose vehicles, so you will never have to wait around for separate deliveries. Our delivery schedules are completely flexible to ensure you get
-                                your wholesale food items when it suits you. So, if your schedule changes, we will change with you; that is what makes us one of the most reliable and adaptable food service delivery companies in Leeds.
+                                Reliable, flexible, responsive food service delivery is what we do best, and we pride ourselves on the fact that we will go the extra mile to get your wholesale food order to you exactly when you need it. <br></br>
+                                <br></br>We deliver all our fresh, frozen and ambient wholesale food products from our multi-purpose vehicles, so you will never have to wait around for separate deliveries. <br></br>
+                                <br></br> Our delivery schedules are completely flexible to ensure you get your wholesale food items when it suits you. So, if your schedule changes, we will change with you; that is what makes us one of the most
+                                reliable and adaptable food service delivery companies in Leeds.
                             </p>
                         </div>
                         <div className="block">

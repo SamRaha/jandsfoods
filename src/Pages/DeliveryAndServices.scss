@@ -63,7 +63,7 @@
             margin: 0 30px;
             text-align: center;
             flex: 1;
-            // width: 500px;
+            max-width: 800px !important;
 
             p {
                 text-align: justify;
@@ -75,7 +75,7 @@
     }
 }
 
-@media only screen and (max-width: 1433px) {
+@media only screen and (max-width: 1076px) {
     .delivery-and-services-container {
         justify-content: flex-start !important;
         height: 100%;
@@ -127,7 +127,7 @@
         .block {
             text-align: justify;
             min-width: 278px !important;
-            max-width: 500px !important;
+            max-width: 800px !important;
         }
     }
 }

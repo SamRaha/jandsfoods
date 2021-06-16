@@ -19,7 +19,8 @@ function Contact() {
                             <h1> Where We Are</h1>
                             <p>
                                 We’re located on Wyther Lane Industrial Estate in Kirkstall, just a 10 minute drive from Leeds City Centre. We’re also close to Headingley, Bramley, Burley, Horsforth and Woodhouse, and Bradford is just 20 minutes
-                                away. <br></br> Unit C3, Wyther Lane Industrial Estate, Leeds, LS5 3AP
+                                away. <br></br>
+                                <br></br> Unit C3, Wyther Lane Industrial Estate, Leeds, LS5 3AP
                             </p>
                         </div>
                         <div className="get-in-touch">
