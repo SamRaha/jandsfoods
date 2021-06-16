@@ -12,7 +12,7 @@
 
     .confirmation-message {
         animation: fadeIn 2s;
-        height: 654px;
+        height: 738px;
         @include flexCenter(column);
 
         h2 {
@@ -131,6 +131,6 @@
         padding: 25px;
     }
     .confirmation-message {
-        height: 671px !important;
+        height: 749px !important;
     }
 }
