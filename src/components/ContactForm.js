@@ -10,10 +10,12 @@ dotenv.config();
 
 function ContactForm() {
     const [reCaptchaCompleted, setreCaptchaCompleted] = React.useState(false);
+    const [showConfirmation, setShowConfirmation] = useState(false);
     function onChange(value) {
         console.log("Captcha value:", value);
         setreCaptchaCompleted(true);
     }
+
     function submitContactForm(e) {
         e.preventDefault();
         var Namere = /[A-Za-z]{1}[A-Za-z]/;
@@ -62,6 +64,7 @@ function ContactForm() {
             redirect: "follow",
         };
         if (reCaptchaCompleted) {
+            setShowConfirmation(true);
             console.log("recaptcha completed");
             fetch("https://tmo7dk53bd.execute-api.eu-west-1.amazonaws.com/dev/", requestOptions)
                 .then((response) => response.text())
@@ -90,44 +93,47 @@ function ContactForm() {
                 </div>
                 <div className="contact-form">
                     <form method="post">
-                        <div id="contact-form-confirmation">
-                            <p>
-                                Thank you for sending a message to the Hermes Local team. <br></br>
-                                We will aim to respond to your enquiry within three working days.
-                            </p>
-                        </div>
                         <div id="contact-form-content" className="contact-form-contents">
-                            <div className="contact-form-title">
-                                <h1>Send us a message</h1>
-                                <p>We will contact you as soon as possible</p>
-                            </div>
-                            <div className="contact-form-fields">
-                                <label htmlFor="nameInput">Name *</label>
-                                <input type="text" id="name-input" />
-                                <label htmlFor="phonenumberinput">Mobile Number *</label>
-                                <input type="phone" id="mobile-input" />
-                                <label htmlFor="exampleInputEmail1">Email *</label>
-                                <input type="email" id="email-input" />
-                                <label htmlFor="messageinput">Message *</label>
-                                <TextareaAutosize rows="2" id="message-input" onResize={(e) => {}} />
-                            </div>
-                            <div className="g-recaptcha" data-sitekey="6Lc7cVMUAAAAAM1yxf64wrmO8gvi8A1oQ_ead1ys"></div>
+                            {showConfirmation ? (
+                                <div className="confirmation-message">
+                                    <h2>Thank you for sending us a message.</h2>
+                                    <h2> We will be in touch as soon as possible.</h2>
+                                </div>
+                            ) : (
+                                <>
+                                    <div className="contact-form-title">
+                                        <h1>Send us a message</h1>
+                                        <p>We will contact you as soon as possible</p>
+                                    </div>
+                                    <div className="contact-form-fields">
+                                        <label htmlFor="nameInput">Name *</label>
+                                        <input type="text" id="name-input" />
+                                        <label htmlFor="phonenumberinput">Mobile Number *</label>
+                                        <input type="phone" id="mobile-input" />
+                                        <label htmlFor="exampleInputEmail1">Email *</label>
+                                        <input type="email" id="email-input" />
+                                        <label htmlFor="messageinput">Message *</label>
+                                        <TextareaAutosize rows="2" id="message-input" onResize={(e) => {}} />
+                                    </div>
+                                    <div className="g-recaptcha" data-sitekey="6Lc7cVMUAAAAAM1yxf64wrmO8gvi8A1oQ_ead1ys"></div>
 
-                            <div className="recaptcha-div">
-                                <ReCAPTCHA sitekey={process.env.REACT_APP_RECAPTCHA_SITE_KEY} onChange={onChange} />
-                            </div>
-                            <div className="terms">
-                                <p>By pressing the submit button, you are agreeing to be contacted by J & S Foods.</p>
-                            </div>
-                            <button
-                                type="submit"
-                                onClick={(event) => {
-                                    submitContactForm(event);
-                                }}
-                                className="submit-button"
-                            >
-                                Submit
-                            </button>
+                                    <div className="recaptcha-div">
+                                        <ReCAPTCHA sitekey={process.env.REACT_APP_RECAPTCHA_SITE_KEY} onChange={onChange} />
+                                    </div>
+                                    <div className="terms">
+                                        <p>By pressing the submit button, you are agreeing to be contacted by J & S Foods.</p>
+                                    </div>
+                                    <button
+                                        type="submit"
+                                        onClick={(event) => {
+                                            submitContactForm(event);
+                                        }}
+                                        className="submit-button"
+                                    >
+                                        Submit
+                                    </button>
+                                </>
+                            )}
                         </div>
                     </form>
                 </div>

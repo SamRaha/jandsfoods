@@ -9,6 +9,27 @@
     position: relative;
     max-width: 1800px !important;
     margin: auto;
+
+    .confirmation-message {
+        animation: fadeIn 2s;
+        height: 654px;
+        @include flexCenter(column);
+
+        h2 {
+            font-weight: 300 !important;
+            margin: 20px 0;
+            font-size: 30px !important;
+        }
+    }
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
     .contact-form {
         z-index: 1;
     }
@@ -98,9 +119,6 @@
         z-index: 20;
     }
 }
-#contact-form-confirmation {
-    display: none;
-}
 
 @media only screen and (max-width: 1076px) {
     .background-leaves {
@@ -111,5 +129,8 @@
     }
     .contact-form-div {
         padding: 25px;
+    }
+    .confirmation-message {
+        height: 671px !important;
     }
 }
