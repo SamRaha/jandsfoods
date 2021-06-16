@@ -49,10 +49,10 @@
 
         .block {
             min-width: 278px;
-            max-width: 500px;
             flex: 1;
             margin: 0 30px;
             text-align: left;
+            max-width: 800px;
 
             & p {
                 text-align: justify;

@@ -130,6 +130,16 @@
     }
 }
 
+// @media only screen and (max-width: 892px) {
+//     .hero {
+//         height: calc(100vh - 75.5px);
+//         align-items: center;
+//         justify-content: flex-start;
+//         padding: 25px 20px !important;
+//         align-items: center;
+//         margin-top: 75.5px;
+//     }
+// }
 @media only screen and (max-width: 1076px) {
     .hero {
         height: calc(100vh - 75.5px);
