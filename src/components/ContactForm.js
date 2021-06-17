@@ -11,6 +11,7 @@ dotenv.config();
 function ContactForm() {
     const [reCaptchaCompleted, setreCaptchaCompleted] = React.useState(false);
     const [showConfirmation, setShowConfirmation] = useState(false);
+    const contactFormEndpoint = process.env.REACT_APP_CONTACT_FORM_URL;
     function onChange(value) {
         console.log("Captcha value:", value);
         setreCaptchaCompleted(true);
@@ -66,7 +67,7 @@ function ContactForm() {
         if (reCaptchaCompleted) {
             setShowConfirmation(true);
             console.log("recaptcha completed");
-            fetch("https://tmo7dk53bd.execute-api.eu-west-1.amazonaws.com/dev/", requestOptions)
+            fetch(contactFormEndpoint, requestOptions)
                 .then((response) => response.text())
                 .then((result) => console.log(result))
                 .then(() => {
