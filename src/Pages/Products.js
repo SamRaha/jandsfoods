@@ -54,7 +54,7 @@ function Products() {
                             <h3>Vegan/ Speciality</h3>
                             <p>
                                 We pride ourselves on sourcing food goods that many other suppliers cannot provide. Our close working relationships with our suppliers has enabled us to provide an extensive range of vegan and plant based foods.
-                                Speciality dietary food products are available from gluten free, lactose free, nut free for example to assist with menu choses.
+                                Speciality dietary food products are available from gluten free, lactose free and nut free to assist with menu choices.
                             </p>
                             <a href="/Vegan_Speciality_Product_List.pdf" download>
                                 View Menu

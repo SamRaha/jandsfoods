@@ -56,7 +56,7 @@ function About() {
                     </div>
                     <div className="about-block">
                         <div className="about-text-block">
-                            <h3>John Hudson – Partner</h3>
+                            <h3>John Hudson</h3>
                             <p>
                                 John has been with the company since 1989 having also worked every role within J and S Foods. Today, he manages all parts of the business working closely with the staff, customers and suppliers to ensure the smooth
                                 operation of the business. Aside from work, John enjoys cycling.
