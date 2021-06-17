@@ -23,7 +23,7 @@
             top: -100px;
         }
         & h1 {
-            font-size: 42px;
+            margin-bottom: 30px !important;
         }
         & p {
             text-align: justify;
@@ -101,14 +101,15 @@
 }
 
 @media only screen and (max-width: 1076px) {
-    h1 {
-        font-size: 35px !important;
-    }
     .products-container {
         width: 100%;
         padding: 30px 25px 0 !important;
         .products-header {
             margin: 0px !important;
+            h1 {
+                font-size: 35px !important;
+                margin-bottom: 20px !important;
+            }
             .left-leaves {
                 display: none;
                 // position: relative !important;

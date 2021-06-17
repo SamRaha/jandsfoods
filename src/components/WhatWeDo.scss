@@ -24,7 +24,6 @@
     }
     & h1 {
         margin-bottom: 60px;
-        margin-top: 60px;
         font-size: 42px;
         font-weight: 500;
     }
@@ -52,7 +51,7 @@
                 text-align: justify;
                 @include roboto(20px);
                 font-weight: 300;
-                margin-top: 30px;
+                margin-top: 20px;
             }
         }
     }
