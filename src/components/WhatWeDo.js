@@ -16,7 +16,7 @@ function WhatWeDo() {
                     <div className="block">
                         <h4>Diverse Food Suppliers</h4>
                         <p>
-                            Our diverse product range caters for all our customers, who range from small independent run cafes, street food vendors, festival vendors restaurants to multi-site school academies and local authorities. You can rest
+                            Our diverse product range caters for all our customers, who range from small independent run cafes, street food vendors, festival vendors, restaurants to multi-site school academies and local authorities. You can rest
                             assured that we can competitively provide wholesale foods and drinks to meet your business’s needs.
                         </p>
                     </div>
