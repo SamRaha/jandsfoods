@@ -60,7 +60,7 @@
 @media only screen and (max-width: 1433px) {
     .what-we-do-container {
         justify-content: flex-start !important;
-        padding-top: 30px !important;
+        padding-top: 120px;
         height: 100%;
         & h1 {
             margin: 0 !important;
@@ -92,6 +92,9 @@
 }
 
 @media only screen and (max-width: 1076px) {
+    .what-we-do-container {
+        padding-top: 30px !important;
+    }
     .left-leaves {
         // display: block;
         // position: relative !important;
