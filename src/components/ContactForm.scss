@@ -60,6 +60,9 @@
         @include flexCenter(column);
         margin-top: 20px;
     }
+    .button-centered {
+        text-align: center !important;
+    }
     .submit-button {
         margin-top: 20px;
         width: 108px;
@@ -69,6 +72,9 @@
         color: white;
         background-color: #277d2a;
         border: none;
+        padding: 0 1px;
+        text-align: center !important;
+        display: inline-block !important;
     }
     .terms {
         text-align: justify;

@@ -123,15 +123,17 @@ function ContactForm() {
                                     <div className="terms">
                                         <p>By pressing the submit button, you are agreeing to be contacted by J & S Foods.</p>
                                     </div>
-                                    <button
-                                        type="submit"
-                                        onClick={(event) => {
-                                            submitContactForm(event);
-                                        }}
-                                        className="submit-button"
-                                    >
-                                        Submit
-                                    </button>
+                                    <div className="button-centered">
+                                        <button
+                                            type="submit"
+                                            onClick={(event) => {
+                                                submitContactForm(event);
+                                            }}
+                                            className="submit-button"
+                                        >
+                                            Submit
+                                        </button>
+                                    </div>
                                 </>
                             )}
                         </div>
