@@ -30,8 +30,8 @@ function WhatWeDo() {
                     <div className="block">
                         <h4>Product Sourcing</h4>
                         <p>
-                            From our premium sourdough pizza balls to our vegan range, many of our products were sourced by us to meet our customers’ needs. Food tastes and trends are constantly evolving soif you can’t find what you’re looking for on
-                            our product page, get in touch, you can guarantee we will go the extra mile to source it for you.
+                            From our premium sourdough pizza balls to our vegan range, many of our products were sourced by us to meet our customers’ needs. Food tastes and trends are constantly evolving, so if you can’t find what you’re looking for
+                            on our product page, get in touch, you can guarantee we will go the extra mile to source it for you.
                         </p>
                     </div>
                 </div>

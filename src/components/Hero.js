@@ -70,7 +70,7 @@ function Hero() {
             <div className="hero-container">
                 <div className="hero">
                     <h1>Fresh Food Wholesalers</h1>
-                    <p>Leeds-based food wholesalers and food cash and carry; serving the catering industry since 1977.</p>
+                    <p>Leeds-based food wholesalers; serving the catering industry since 1977.</p>
                     <Link to="/products">
                         <button className="products-button">
                             Explore our products <img src={Arrow} alt="" />
