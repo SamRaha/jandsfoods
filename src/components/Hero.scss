@@ -41,7 +41,7 @@
     background-size: cover;
 }
 .hero-container {
-    max-width: 1800px;
+    max-width: 2100px;
     @include flexCenter(column);
     justify-content: flex-start !important;
     align-items: flex-start !important;
@@ -51,7 +51,7 @@
     // min-height: calc(100vh - 100px);
     position: absolute;
     top: 0;
-    max-width: 1800px;
+    max-width: 2100px;
     margin: auto;
     background-repeat: no-repeat;
     // transition: background-image 0.5s linear;

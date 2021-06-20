@@ -1,7 +1,7 @@
 @import "../variables.scss";
 
 .products-container {
-    max-width: 1800px;
+    max-width: 2100px;
     margin: auto;
     @include flexCenter(column);
 
