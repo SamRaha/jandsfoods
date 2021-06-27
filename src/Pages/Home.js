@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import TwitterFeed from "../components/TwitterFeed";
 import WhatWeDo from "../components/WhatWeDo";
+
 import "./Home.scss";
 
 function Home() {
@@ -14,7 +15,7 @@ function Home() {
                 <Hero />
                 <WhatWeDo />
                 <CustomerReviews />
-                {/* <TwitterFeed /> */}
+                <TwitterFeed />
             </div>
             <Footer />
         </>
