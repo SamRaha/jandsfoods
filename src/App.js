@@ -24,7 +24,7 @@ function App() {
                         <Route path="/deliveryandservices" exact component={DeliveryAndServices} />
                     </Switch>
                 </ScrollToTop>
-                <CookieConsent location="bottom" buttonText="Sure thing!" cookieName="myAwesomeCookieName2" style={{ fontFamily: "Roboto sans-serif", background: "#164f39" }} buttonStyle={{ color: "#4e503b", fontSize: "13px" }} expires={365}>
+                <CookieConsent location="bottom" buttonText="I understand" cookieName="myAwesomeCookieName2" style={{ fontFamily: "Roboto sans-serif", background: "#164f39" }} buttonStyle={{ color: "#4e503b", fontSize: "13px" }} expires={365}>
                     This website uses cookies to enhance the user experience.
                 </CookieConsent>
             </div>
