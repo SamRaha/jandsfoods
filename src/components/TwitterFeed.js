@@ -1,6 +1,6 @@
 import React from "react";
 import "./TwitterFeed.scss";
-import { TwitterTimelineEmbed, TwitterShareButton, TwitterFollowButton, TwitterHashtagButton, TwitterMentionButton, TwitterTweetEmbed, TwitterMomentShare, TwitterDMButton, TwitterVideoEmbed, TwitterOnAirButton } from "react-twitter-embed";
+import { TwitterTimelineEmbed } from "react-twitter-embed";
 
 function TwitterFeed() {
     return (
@@ -9,6 +9,7 @@ function TwitterFeed() {
             <div className="centerContent twitter-feed">
                 <div className=" selfCenter twitter-timeline">
                     <TwitterTimelineEmbed sourceType="profile" screenName="jandsfoodsleeds" options={{ height: 1000, width: 800 }} />
+                    <TwitterTimelineEmbed sourceType="profile" screenName="jandsfoodsleeds" options={{ id: "profile:jandsfoodsleeds" }} />
                 </div>
             </div>
         </div>

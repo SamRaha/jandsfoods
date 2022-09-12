@@ -13,7 +13,7 @@ function ContactForm() {
     const [showConfirmation, setShowConfirmation] = useState(false);
     const contactFormEndpoint = process.env.REACT_APP_CONTACT_FORM_URL;
     function onChange(value) {
-        console.log("Captcha value:", value);
+        // console.log("Captcha value:", value);
         setreCaptchaCompleted(true);
     }
 
@@ -66,7 +66,7 @@ function ContactForm() {
         };
         if (reCaptchaCompleted) {
             setShowConfirmation(true);
-            console.log("recaptcha completed");
+            // console.log("recaptcha completed");
             fetch(contactFormEndpoint, requestOptions)
                 .then((response) => response.text())
                 .then((result) => console.log(result))
@@ -82,7 +82,7 @@ function ContactForm() {
                     console.log("error", error) && alert("unsuccesful");
                 });
         } else {
-            console.log("recaptcha not completed");
+            // console.log("recaptcha not completed");
         }
     }
     return (

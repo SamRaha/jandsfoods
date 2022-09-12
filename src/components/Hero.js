@@ -25,7 +25,7 @@ function Hero() {
     });
     const imgArray = [backgroundImage5, backgroundImage1, backgroundImage3, backgroundImage4, backgroundImage2];
     const imgArrayMobile = [mobileBackground3, mobileBackground4, mobileBackground1, mobileBackground2, mobileBackground5];
-    console.log("imgArray: ", imgArray);
+    // console.log("imgArray: ", imgArray);
     // const preLoadedImage = [];
     useEffect(() => {
         imgArray.forEach((picture) => {
