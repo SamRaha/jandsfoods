@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import fairtradeImage from "../assets/fairtrade-group.png";
 import { Link } from "react-router-dom";
-import { useMediaQuery } from "react-responsive";
+// import { useMediaQuery } from "react-responsive";
 import "./Hero.scss";
 import Arrow from "../assets/arrow-vector.svg";
 import { Carousel } from "react-responsive-carousel";
@@ -11,20 +11,20 @@ import backgroundImage2 from "../assets/backgroundImage2.jpg";
 import backgroundImage3 from "../assets/backgroundImage3.jpg";
 import backgroundImage4 from "../assets/backgroundImage4.jpg";
 import backgroundImage5 from "../assets/backgroundImage5.jpg";
-import mobileBackground1 from "../assets/mobileBackground1.jpg";
-import mobileBackground2 from "../assets/mobileBackground2.jpg";
-import mobileBackground3 from "../assets/mobileBackground3.jpg";
-import mobileBackground4 from "../assets/mobileBackground4.jpg";
-import mobileBackground5 from "../assets/mobileBackground5.jpg";
+// import mobileBackground1 from "../assets/mobileBackground1.jpg";
+// import mobileBackground2 from "../assets/mobileBackground2.jpg";
+// import mobileBackground3 from "../assets/mobileBackground3.jpg";
+// import mobileBackground4 from "../assets/mobileBackground4.jpg";
+// import mobileBackground5 from "../assets/mobileBackground5.jpg";
 
 function Hero() {
-    const isMobile = useMediaQuery({ query: "(max-width: 1076px)" });
+    // const isMobile = useMediaQuery({ query: "(max-width: 1076px)" });
 
-    const [imgState, setImgState] = useState({
-        img: 0,
-    });
+    // const [imgState, setImgState] = useState({
+    //     img: 0,
+    // });
     const imgArray = [backgroundImage5, backgroundImage1, backgroundImage3, backgroundImage4, backgroundImage2];
-    const imgArrayMobile = [mobileBackground3, mobileBackground4, mobileBackground1, mobileBackground2, mobileBackground5];
+    // const imgArrayMobile = [mobileBackground3, mobileBackground4, mobileBackground1, mobileBackground2, mobileBackground5];
     // console.log("imgArray: ", imgArray);
     // const preLoadedImage = [];
     useEffect(() => {

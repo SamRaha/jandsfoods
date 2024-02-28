@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef, TextareaHTMLAttributes } from "react";
+import React, { useState } from "react";
 import $ from "jquery";
 import "./ContactForm.scss";
 import ReCAPTCHA from "react-google-recaptcha";
